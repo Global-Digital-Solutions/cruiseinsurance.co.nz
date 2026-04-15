@@ -1,0 +1,2 @@
+:HL["/_next/static/chunks/0l79fp5jwxc1a.css","style"]
+0:{"tree":{"name":"","param":null,"prefetchHints":16,"slots":{"children":{"name":"nz-cruise-insurance","param":null,"prefetchHints":0,"slots":{"children":{"name":"term","param":{"type":"d","key":"comprehensive-cruise-insurance","siblings":null},"prefetchHints":0,"slots":{"children":{"name":"__PAGE__","param":null,"prefetchHints":0,"slots":null}}}}}}},"staleTime":300,"buildId":"lwcqFgP6852Nx-bpcO3wz"}
