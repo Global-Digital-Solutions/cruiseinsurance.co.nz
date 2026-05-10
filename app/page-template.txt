@@ -1,0 +1,51 @@
+This is a template file to help organize page creation.
+Each dynamic page needs:
+1. Metadata (generateMetadata function)
+2. Component body with proper structure
+3. JSON-LD schemas for SEO
+4. Proper Tailwind styling
+5. Links and CTAs
+
+Homepage needs:
+- Hero with background image
+- Coverage grid
+- Trade types grid  
+- How it works section
+- Provider logos
+- Stats strip
+- Blog preview
+- Full QuoteForm
+- FAQ preview section
+
+Type pages need:
+- Hero with overlay QuoteForm
+- Pricing table
+- FAQ accordion
+- Cross-link section
+
+Trade pages need:
+- Hero with overlay QuoteForm
+- Recommended covers
+- FAQ accordion
+- Cross-links
+
+SEO pages need:
+- Hero section
+- Main content
+- QuoteForm compact sidebar
+- Related pages
+
+Blog pages need:
+- Full article content (600-800 words for each)
+- Sidebar QuoteForm
+- TOC generation
+- Related posts
+- Schemas
+
+Static pages:
+- About
+- Contact  
+- Privacy
+- Terms
+- Disclaimer
+- Thank You
