@@ -129,9 +129,6 @@ export default async function DestinationPage({ params }: { params: Promise<{ sl
                 ))}
               </div>
             </div>
-            <div>
-              <CompareCTA variant="sidebar" />
-            </div>
           </div>
         </div>
       </section>
