@@ -55,16 +55,16 @@ export default function NavBar() {
 
           {/* Desktop nav */}
           <div className="hidden lg:flex items-center gap-1">
-            {/* Destinations dropdown — click-based */}
-            <div className="relative">
-              <button onClick={() => { setDestsOpen(!destsOpen); setPassOpen(false); }}
-                className="flex items-center gap-1 px-3 py-2 text-sm text-gray-300 hover:text-white rounded-lg hover:bg-slate-800 transition-colors">
-                Destinations <ChevronDown size={14} className={destsOpen ? 'rotate-180 transition-transform' : 'transition-transform'} />
+            {/* Destinations dropdown — hover with no gap */}
+            <div className="relative group" onMouseEnter={() => setDestsOpen(true)} onMouseLeave={() => setDestsOpen(false)}>
+              <button className="flex items-center gap-1 px-3 py-2 text-sm text-gray-300 hover:text-white rounded-lg hover:bg-slate-800 transition-colors">
+                Destinations <ChevronDown size={14} />
               </button>
               {destsOpen && (
                 <div className="absolute top-full left-0 w-56 bg-slate-800 rounded-xl shadow-xl border border-slate-700 py-2 z-50">
+                  <div className="absolute -top-2 left-0 right-0 h-2" />
                   {destinations.map(d => (
-                    <Link key={d.href} href={d.href} onClick={() => setDestsOpen(false)}
+                    <Link key={d.href} href={d.href}
                       className="block px-4 py-2 text-sm text-gray-300 hover:text-white hover:bg-slate-700">
                       {d.label}
                     </Link>
@@ -73,16 +73,16 @@ export default function NavBar() {
               )}
             </div>
 
-            {/* Who's Travelling dropdown — click-based */}
-            <div className="relative">
-              <button onClick={() => { setPassOpen(!passOpen); setDestsOpen(false); }}
-                className="flex items-center gap-1 px-3 py-2 text-sm text-gray-300 hover:text-white rounded-lg hover:bg-slate-800 transition-colors">
-                Who&apos;s Travelling <ChevronDown size={14} className={passOpen ? 'rotate-180 transition-transform' : 'transition-transform'} />
+            {/* Who's Travelling dropdown — hover with no gap */}
+            <div className="relative group" onMouseEnter={() => setPassOpen(true)} onMouseLeave={() => setPassOpen(false)}>
+              <button className="flex items-center gap-1 px-3 py-2 text-sm text-gray-300 hover:text-white rounded-lg hover:bg-slate-800 transition-colors">
+                Who&apos;s Travelling <ChevronDown size={14} />
               </button>
               {passOpen && (
                 <div className="absolute top-full left-0 w-56 bg-slate-800 rounded-xl shadow-xl border border-slate-700 py-2 z-50">
+                  <div className="absolute -top-2 left-0 right-0 h-2" />
                   {passengers.map(p => (
-                    <Link key={p.href} href={p.href} onClick={() => setPassOpen(false)}
+                    <Link key={p.href} href={p.href}
                       className="block px-4 py-2 text-sm text-gray-300 hover:text-white hover:bg-slate-700">
                       {p.label}
                     </Link>

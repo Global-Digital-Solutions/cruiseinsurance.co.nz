@@ -110,7 +110,10 @@ export default async function PassengerPage({ params }: { params: Promise<{ slug
 
       {/* Hero */}
       <section className="relative bg-slate-900 overflow-hidden">
-        <div style={{ position: "absolute", inset: 0, backgroundImage: `url(${heroImage})`, backgroundSize: "cover", backgroundPosition: "center", opacity: 0.65 }} />
+        <div className="absolute inset-0">
+          <img src={heroImage} alt="" className="w-full h-full object-cover" style={{ opacity: 0.80 }} />
+          <div className="absolute inset-0" style={{ background: "linear-gradient(to top, rgba(15,23,42,0.85) 0%, rgba(15,23,42,0.20) 50%, transparent 100%)" }} />
+        </div>
         <div className="absolute inset-0 bg-gradient-to-t from-slate-900/85 via-slate-900/30 to-transparent" />
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 lg:py-20">
           <nav className="flex items-center gap-2 text-sm text-gray-500 mb-6">
