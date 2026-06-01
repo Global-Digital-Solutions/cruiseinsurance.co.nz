@@ -42,16 +42,21 @@ export default function ComparePage() {
   return (
     <>
       {/* Hero */}
-      <section className="bg-slate-800 border-b border-slate-700 py-12">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <nav className="flex items-center gap-2 text-sm text-gray-500 mb-4">
-            <Link href="/" className="hover:text-sky-400">Home</Link>
+      <section className="relative bg-slate-900 text-white py-20 overflow-hidden min-h-[280px] flex items-end">
+        <div className="absolute inset-0">
+          <img src="https://images.unsplash.com/photo-1548574505-5e239809ee19?w=1600&q=80" alt="" className="w-full h-full object-cover" style={{ opacity: 0.75 }} />
+          <div className="absolute inset-0" style={{ background: 'linear-gradient(to right, rgba(15,23,42,0.88) 0%, rgba(15,23,42,0.50) 60%, rgba(15,23,42,0.20) 100%)' }} />
+          <div className="absolute inset-0" style={{ background: 'linear-gradient(to top, rgba(15,23,42,0.85) 0%, transparent 50%)' }} />
+        </div>
+        <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pb-2 w-full">
+          <nav className="flex items-center gap-2 text-sm text-sky-300 mb-5">
+            <Link href="/" className="hover:text-white">Home</Link>
             <span>/</span>
-            <span className="text-gray-300">Compare Providers</span>
+            <span className="text-white">Compare Providers</span>
           </nav>
-          <h1 className="text-4xl font-bold text-white mb-3">Compare NZ Cruise Insurance Providers</h1>
-          <p className="text-gray-400 text-lg max-w-2xl">
-            Side-by-side comparison of NZ&apos;s leading cruise insurance providers — ratings, coverage, and pricing.
+          <h1 className="text-4xl md:text-5xl font-bold text-white mb-3">Compare Cruise Insurance Providers</h1>
+          <p className="text-gray-200 text-lg max-w-2xl">
+            Side-by-side comparison of the leading cruise insurance providers — ratings, coverage, and pricing.
           </p>
         </div>
       </section>
