@@ -107,10 +107,12 @@ export default function HomePage() {
 
       {/* ── HERO ── */}
       <section className="relative bg-slate-900 overflow-hidden">
-        <div
-          style={{ position: "absolute", inset: 0, backgroundImage: 'url(https://images.unsplash.com/photo-1548574505-5e239809ee19?w=1920&q=80)', backgroundSize: "cover", backgroundPosition: "center", opacity: 0.60 }}
-        />
-        <div className="absolute inset-0 bg-gradient-to-br from-slate-900 via-slate-900/90 to-sky-900/40" />
+        <div className="absolute inset-0">
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img src="https://images.unsplash.com/photo-1548574505-5e239809ee19?w=1920&q=80" alt="" className="w-full h-full object-cover" style={{ opacity: 0.90 }} />
+          <div className="absolute inset-0" style={{ background: 'linear-gradient(to right, rgba(15,23,42,0.82) 0%, rgba(15,23,42,0.45) 55%, rgba(15,23,42,0.15) 100%)' }} />
+          <div className="absolute inset-0" style={{ background: 'linear-gradient(to top, rgba(15,23,42,0.70) 0%, transparent 40%)' }} />
+        </div>
 
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 lg:py-28">
           <div className="max-w-3xl">
