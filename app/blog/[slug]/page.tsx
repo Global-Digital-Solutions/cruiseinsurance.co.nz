@@ -19,11 +19,11 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   return {
     title: post.title,
     description: post.excerpt,
-    alternates: { canonical: `${SITE_URL}/blog/${slug}` },
+    alternates: { canonical: `${SITE_URL}/blog/${slug}/` },
     openGraph: {
       title: post.title,
       description: post.excerpt,
-      url: `${SITE_URL}/blog/${slug}`,
+      url: `${SITE_URL}/blog/${slug}/`,
       images: [post.image],
       type: 'article',
       publishedTime: post.date,
@@ -259,15 +259,17 @@ export default async function BlogPost({ params }: { params: Promise<{ slug: str
             </div>
 
             <div className="bg-slate-800 rounded-xl p-5 border border-slate-700">
-              <h3 className="font-semibold text-white mb-3">Quick Links</h3>
+              <h3 className="font-semibold text-white mb-3">Useful Guides</h3>
               <ul className="space-y-2 text-sm">
                 {[
                   { href: '/cruise-insurance-guide/', label: 'Cruise Insurance Guide' },
-                  { href: '/making-a-claim/', label: 'Making a Claim' },
-                  { href: '/faqs/', label: 'FAQs' },
                   { href: '/compare/', label: 'Compare Providers' },
+                  { href: '/faqs/', label: 'FAQs' },
+                  { href: '/making-a-claim/', label: 'Making a Claim' },
                   { href: '/nz-cruise-insurance/best-cruise-insurance-nz/', label: 'Best Cruise Insurance' },
                   { href: '/nz-cruise-insurance/senior-cruise-insurance/', label: 'Senior Cruise Insurance' },
+                  { href: '/nz-cruise-insurance/cheap-cruise-insurance/', label: 'Cheap Cruise Insurance' },
+                  { href: '/nz-cruise-insurance/medical-cover-cruise/', label: 'Medical Cover at Sea' },
                 ].map(l => (
                   <li key={l.href}>
                     <Link href={l.href} className="text-gray-400 hover:text-sky-400 transition-colors">{l.label}</Link>
@@ -275,6 +277,27 @@ export default async function BlogPost({ params }: { params: Promise<{ slug: str
                 ))}
               </ul>
             </div>
+
+            {/* Destination-specific links for Destinations category */}
+            {post.category === 'Destinations' && (
+              <div className="bg-slate-800 rounded-xl p-5 border border-slate-700">
+                <h3 className="font-semibold text-white mb-3">By Destination</h3>
+                <ul className="space-y-2 text-sm">
+                  {[
+                    { href: '/destinations/asian-cruise-insurance/', label: 'Asian Cruise Insurance' },
+                    { href: '/destinations/european-cruise-insurance/', label: 'European Cruise Insurance' },
+                    { href: '/destinations/south-pacific-cruise-insurance/', label: 'South Pacific Cruises' },
+                    { href: '/destinations/australian-cruise-insurance/', label: 'Australian Cruises' },
+                    { href: '/destinations/worldwide-cruise-insurance/', label: 'Worldwide Cover' },
+                    { href: '/destinations/domestic-cruise-insurance/', label: 'NZ Domestic Cruises' },
+                  ].map(l => (
+                    <li key={l.href}>
+                      <Link href={l.href} className="text-gray-400 hover:text-sky-400 transition-colors">{l.label}</Link>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            )}
           </div>
         </div>
       </div>

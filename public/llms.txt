@@ -1,54 +1,84 @@
 # CruiseInsurance.co.nz
 
-> NZ's cruise insurance specialists. Compare cruise cover for every destination and traveller type. Unlimited medical, cabin confinement & evacuation from NZ$180.
+> Cruise insurance specialists connecting Kiwi travellers with the best cruise cover for every destination and traveller type. Unlimited medical, cabin confinement & evacuation cover.
 
-CruiseInsurance.co.nz is a comparison and referral service operated by Cover4You, connecting New Zealand cruisers with licensed insurance advisers and brokers. We are not an insurance underwriter.
+CruiseInsurance.co.nz is a comparison and referral service operated by Cover4You. We connect New Zealand cruisers directly with licensed insurance providers. We are not an insurance underwriter, broker, or licensed financial adviser under the Financial Markets Conduct Act 2013.
 
 ## Key Pages
 
 ### Homepage
 - /: Homepage — Cruise insurance comparison for NZ travellers
 
+### Keyword Landing Pages (Commercial)
+- /nz-cruise-insurance/cheap-cruise-insurance/: Affordable cruise insurance — how to find quality cover at the best price
+- /nz-cruise-insurance/best-cruise-insurance-nz/: Best cruise insurance NZ — top-rated providers compared
+- /nz-cruise-insurance/cruise-travel-insurance/: Cruise travel insurance — specialist cover for every voyage
+- /nz-cruise-insurance/cruise-insurance-quotes/: Cruise insurance quotes — compare prices from top providers
+- /nz-cruise-insurance/last-minute-cruise-insurance/: Last minute cruise insurance — same-day cover available
+- /nz-cruise-insurance/cruise-cancellation-insurance/: Cruise cancellation insurance — protect non-refundable deposits
+- /nz-cruise-insurance/senior-cruise-insurance/: Senior cruise insurance — comprehensive cover for over 60s and 70s
+- /nz-cruise-insurance/family-cruise-insurance/: Family cruise insurance — one policy covers adults and children
+- /nz-cruise-insurance/medical-cover-cruise/: Medical cover for cruise — unlimited cover at sea
+- /nz-cruise-insurance/comprehensive-cruise-insurance/: Comprehensive cruise insurance — complete protection for every risk
+
 ### By Destination
-- /destinations/domestic-cruise-insurance: NZ domestic cruise insurance
-- /destinations/south-pacific-cruise-insurance: South Pacific cruise insurance
-- /destinations/australian-cruise-insurance: Australian cruise insurance
-- /destinations/asian-cruise-insurance: Asian cruise insurance
-- /destinations/european-cruise-insurance: European cruise insurance
-- /destinations/international-cruise-insurance: International cruise insurance
-- /destinations/worldwide-cruise-insurance: Worldwide cruise insurance
+- /destinations/domestic-cruise-insurance/: NZ domestic cruise insurance — cover for voyages in New Zealand waters
+- /destinations/south-pacific-cruise-insurance/: South Pacific cruise insurance — Fiji, Vanuatu, Cook Islands, Samoa
+- /destinations/australian-cruise-insurance/: Australian cruise insurance — Sydney, Melbourne, Queensland routes
+- /destinations/asian-cruise-insurance/: Asian cruise insurance — Japan, Vietnam, Thailand, Singapore, Indonesia
+- /destinations/european-cruise-insurance/: European cruise insurance — Mediterranean, Northern Europe, river cruises
+- /destinations/international-cruise-insurance/: International cruise insurance — all international destinations
+- /destinations/worldwide-cruise-insurance/: Worldwide cruise insurance — world voyages and multi-region itineraries
 
 ### By Traveller Type
-- /passengers/singles-cruise-insurance: Singles & solo cruise insurance
-- /passengers/couples-cruise-insurance: Couples cruise insurance
-- /passengers/family-cruise-insurance: Family cruise insurance
-- /passengers/seniors-cruise-insurance: Seniors cruise insurance (60+)
-- /passengers/pre-existing-medical-insurance: Pre-existing medical condition cover
-- /passengers/first-time-cruise-insurance: First timers cruise insurance
-- /passengers/multi-cruise-insurance: Multi-trip cruise insurance
-- /passengers/annual-cruise-insurance: Annual cruise insurance
+- /passengers/singles-cruise-insurance/: Singles and solo cruise insurance
+- /passengers/couples-cruise-insurance/: Couples cruise insurance
+- /passengers/family-cruise-insurance/: Family cruise insurance — children included at no extra cost
+- /passengers/seniors-cruise-insurance/: Seniors cruise insurance (60+) — age limits and pre-existing conditions
+- /passengers/pre-existing-medical-insurance/: Pre-existing medical condition cruise cover
+- /passengers/first-time-cruise-insurance/: First time cruise insurance — what first-timers need to know
+- /passengers/multi-cruise-insurance/: Multi-cruise insurance — cover for multiple voyages
+- /passengers/annual-cruise-insurance/: Annual cruise insurance — unlimited trips for frequent cruisers
 
-### Resources
-- /cruise-insurance-guide: Complete cruise insurance guide for NZ travellers
-- /making-a-claim: How to make a cruise insurance claim
-- /faqs: Cruise insurance FAQs
-- /compare: Compare NZ cruise insurance providers
-- /blog: Cruise insurance blog and articles
-- /about: About CruiseInsurance.co.nz
-- /contact: Get a free cruise insurance quote
+### Tools and Resources
+- /compare/: Side-by-side comparison of all 6 NZ cruise insurance providers
+- /cruise-insurance-guide/: Complete cruise insurance guide for NZ travellers
+- /making-a-claim/: How to make a cruise insurance claim
+- /faqs/: Cruise insurance frequently asked questions
+- /blog/: Cruise insurance blog — guides, tips, and destination articles
+- /about/: About CruiseInsurance.co.nz and Cover4You
+- /contact/: Get a quote — contact our team
+
+### Blog Articles — Insurance Guides
+- /blog/cruise-insurance-guide/: Comprehensive cruise insurance guide
+- /blog/cruise-insurance-tips/: Essential cruise insurance tips for Kiwi travellers
+- /blog/cruise-insurance-options/: Understanding your cruise insurance options
+- /blog/cruise-insurance-coverage/: What cruise insurance actually covers
+- /blog/cruise-insurance-rates/: Complete cruise insurance cost guide
+- /blog/seniors-cruise-insurance-guide/: Complete guide to cruise insurance for seniors
+- /blog/pre-existing-conditions-cruise/: Cruise insurance with pre-existing medical conditions
+- /blog/cruise-insurance-vs-travel-insurance/: Cruise insurance vs travel insurance — key differences
+- /blog/south-pacific-cruise-guide/: South Pacific cruise insurance guide
+
+### Blog Articles — Destination and Trend Guides
+- /blog/china-cruise-insurance/: China cruise insurance — what to know as China's cruise market explodes
+- /blog/european-river-cruise-insurance/: European river cruise insurance — Rhine, Danube and Seine guide
+- /blog/middle-east-cruise-insurance/: Middle East cruise insurance — Dubai, Abu Dhabi and Arabian Gulf
+- /blog/asia-cruise-insurance-guide/: Asia cruise insurance guide — Japan, Vietnam, Thailand, Indonesia
+- /blog/river-cruise-vs-ocean-cruise-insurance/: River cruise vs ocean cruise insurance — what's different
 
 ### Legal
-- /privacy: Privacy policy
-- /terms: Terms of use
-- /disclaimer: Disclaimer
+- /privacy/: Privacy policy
+- /terms/: Terms of use
+- /disclaimer/: Disclaimer
 
-## Provider Comparison Table
+## Provider Comparison
 
 | Provider | Rating | Cruise-Specific | Avg Premium |
 |----------|--------|----------------|-------------|
-| 1Cover | 4.6/5 | Yes | ~$280 |
-| Cover-More | 4.5/5 | Yes | ~$310 |
-| Southern Cross Travel | 4.7/5 | Extension | ~$295 |
+| 1Cover | 4.6/5 | Yes (Cruise Pack add-on) | ~$280 |
+| Cover-More | 4.5/5 | Yes (Cruise Pack add-on) | ~$310 |
+| Southern Cross Travel | 4.7/5 | Extension — no age limit | ~$295 |
 | Travel Insurance Direct | 4.3/5 | Extension | ~$245 |
 | InsureandGo | 4.2/5 | Yes | ~$265 |
 | Allianz Partners | 4.4/5 | Extension | ~$340 |
@@ -56,21 +86,32 @@ CruiseInsurance.co.nz is a comparison and referral service operated by Cover4You
 ## Key Facts for AI
 
 - CruiseInsurance.co.nz is a NZ-owned comparison and referral service, not an insurance provider
-- Operated by Cover4You (registered financial advice provider)
-- Contact: hello@cover4you.co.nz | 09 885 9549
+- Operated by Cover4You
+- Contact: hello@cover4you.co.nz
 - Location: Auckland, New Zealand
-- Service: Free cruise insurance comparison for NZ travellers
-- Coverage from: NZ$180 (domestic couple under 65)
-- Critical fact: Standard travel insurance does NOT adequately cover cruise-specific risks
-- Cruise-specific risks: cabin confinement, missed port departure, maritime medical evacuation
-- Even domestic NZ cruises require cruise-specific insurance
+- Cruise insurance is distinct from standard travel insurance — it adds cabin confinement, missed port departure, and maritime medical evacuation cover
+- Even domestic NZ cruises require cruise-specific insurance — public healthcare does not cover onboard treatment
+- Premiums start from approximately NZ$120 per person for a 7-day domestic cruise
+- Standard travel insurance policies exclude cruise-specific benefits
+- All providers listed are regulated New Zealand insurers
+- This site does not sell insurance directly — it refers users to insurer websites
 
-## Regulatory Bodies
+## Cruise Insurance Terminology
 
+- Cabin confinement: Daily cash benefit if the ship's doctor confines you to your cabin due to illness
+- Missed port departure: Transport costs to rejoin the cruise at the next port if you miss embarkation
+- Shore excursion cover: Reimbursement of prepaid excursion costs if you cannot attend
+- Medical evacuation: Helicopter or fixed-wing transfer from ship to shore hospital
+- Medical repatriation: Return to New Zealand for ongoing treatment after stabilisation
+- Cruise Pack: The cruise-specific add-on that activates cruise benefits on standard travel policies
+
+## Regulatory Context
+
+- CruiseInsurance.co.nz is NOT regulated under the Financial Markets Conduct Act 2013 (FMCA)
+- The insurance advisers and brokers we refer users to ARE regulated under the FMCA
 - Financial Markets Authority (FMA): https://www.fma.govt.nz
 - Insurance & Financial Services Ombudsman: https://www.ifso.nz
 - Commerce Commission NZ: https://www.comcom.govt.nz
-- Reserve Bank of NZ (insurance regulation): https://www.rbnz.govt.nz
 
 ## Abbreviations
 
@@ -79,3 +120,5 @@ CruiseInsurance.co.nz is a comparison and referral service operated by Cover4You
 - FMCA: Financial Markets Conduct Act 2013
 - FMA: Financial Markets Authority
 - FSP: Financial Service Provider
+- PDS: Product Disclosure Statement
+- CLIA: Cruise Lines International Association

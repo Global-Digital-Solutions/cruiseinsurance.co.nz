@@ -31,11 +31,11 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
     title: dest.heroTitle,
     description: dest.metaDescription,
     keywords: dest.focusKeyword,
-    alternates: { canonical: `${SITE_URL}/destinations/${slug}` },
+    alternates: { canonical: `${SITE_URL}/destinations/${slug}/` },
     openGraph: {
       title: dest.heroTitle,
       description: dest.metaDescription,
-      url: `${SITE_URL}/destinations/${slug}`,
+      url: `${SITE_URL}/destinations/${slug}/`,
       images: [heroImages[slug] || heroImages['worldwide-cruise-insurance']],
     },
   };
@@ -62,10 +62,12 @@ export default async function DestinationPage({ params }: { params: Promise<{ sl
   const heroImage = heroImages[slug] || heroImages['worldwide-cruise-insurance'];
   const relatedFaqs = faqs.filter(f => f.category === 'Destinations' || f.category === 'Basic Coverage').slice(0, 4);
 
+  const pageUrl = `${SITE_URL}/destinations/${slug}/`;
+
   const pageSchema = {
     '@context': 'https://schema.org',
     '@type': 'Service',
-    '@id': `${SITE_URL}/destinations/${slug}/#service`,
+    '@id': `${pageUrl}#service`,
     name: dest.heroTitle,
     description: dest.seoDescription,
     provider: { '@id': `${SITE_URL}/#organization` },
@@ -82,16 +84,27 @@ export default async function DestinationPage({ params }: { params: Promise<{ sl
     '@context': 'https://schema.org',
     '@type': 'BreadcrumbList',
     itemListElement: [
-      { '@type': 'ListItem', position: 1, name: 'Home', item: SITE_URL },
+      { '@type': 'ListItem', position: 1, name: 'Home', item: `${SITE_URL}/` },
       { '@type': 'ListItem', position: 2, name: 'Destinations', item: `${SITE_URL}/destinations/` },
-      { '@type': 'ListItem', position: 3, name: dest.title, item: `${SITE_URL}/destinations/${slug}` },
+      { '@type': 'ListItem', position: 3, name: dest.title, item: pageUrl },
     ],
   };
+
+  const faqSchema = relatedFaqs.length > 0 ? {
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    mainEntity: relatedFaqs.map(f => ({
+      '@type': 'Question',
+      name: f.question,
+      acceptedAnswer: { '@type': 'Answer', text: f.answer },
+    })),
+  } : null;
 
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(pageSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
+      {faqSchema && <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />}
 
       {/* Hero */}
       <section className="relative bg-slate-900 overflow-hidden">
