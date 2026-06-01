@@ -10,7 +10,7 @@ import { CheckCircle, ChevronDown, MapPin } from 'lucide-react';
 const SITE_URL = 'https://www.cruiseinsurance.co.nz';
 
 const heroImages: Record<string, string> = {
-  'domestic-cruise-insurance': 'https://images.unsplash.com/photo-1565087572596-4c843abdb99d?w=1920&q=80',
+  'domestic-cruise-insurance': 'https://images.unsplash.com/photo-1507699622108-4be3abd695ad?w=1920&q=80',
   'south-pacific-cruise-insurance': 'https://images.unsplash.com/photo-1590523277543-a94d2e4eb00b?w=1920&q=80',
   'australian-cruise-insurance': 'https://images.unsplash.com/photo-1506973035872-a4ec16b8e8d9?w=1920&q=80',
   'asian-cruise-insurance': 'https://images.unsplash.com/photo-1540959733332-eab4deabeeaf?w=1920&q=80',
