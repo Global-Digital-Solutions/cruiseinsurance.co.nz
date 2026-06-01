@@ -1,32 +1,31 @@
-'use client';
-
-import { ClipboardList, Phone, FileCheck, Anchor } from 'lucide-react';
+import Link from 'next/link';
+import { Search, LayoutList, ExternalLink, Anchor } from 'lucide-react';
 
 export default function HowItWorks() {
   const steps = [
     {
-      icon: ClipboardList,
+      icon: Search,
       step: '01',
       title: 'Tell Us About Your Cruise',
-      description: 'Fill in our simple form — destination, travel dates, who\'s travelling, and any pre-existing conditions. Takes 2 minutes.',
+      description: 'Select your destination, who\'s travelling, and your cruise type. Use our comparison tool to narrow down the providers that suit your situation.',
     },
     {
-      icon: Phone,
+      icon: LayoutList,
       step: '02',
-      title: 'Our Advisers Compare Options',
-      description: 'Within 24 hours, a specialist cruise insurance adviser reviews your requirements and compares options from NZ\'s top providers.',
+      title: 'Compare Providers Side by Side',
+      description: 'See medical cover limits, cabin confinement, missed port, cancellation cover, and pricing across the leading cruise insurance providers — all in one place.',
     },
     {
-      icon: FileCheck,
+      icon: ExternalLink,
       step: '03',
-      title: 'Review Your Personalised Quotes',
-      description: 'Receive 2–3 tailored quotes with clear coverage comparisons. Your adviser explains what each policy covers and any important exclusions.',
+      title: 'Get a Quote Direct from the Insurer',
+      description: 'Click through to your chosen provider\'s website to get a personalised quote. You deal directly with the insurer — we may earn a referral fee at no extra cost to you.',
     },
     {
       icon: Anchor,
       step: '04',
-      title: 'Cruise With Confidence',
-      description: 'Choose your preferred policy, complete your application, and set sail knowing you\'re properly protected for every eventuality.',
+      title: 'Cruise with Confidence',
+      description: 'Purchase your policy directly from the insurer and set sail knowing you\'re properly covered for medical emergencies, evacuations, and everything in between.',
     },
   ];
 
@@ -35,8 +34,8 @@ export default function HowItWorks() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12">
           <h2 className="text-3xl font-bold text-white mb-4">How It Works</h2>
-          <p className="text-gray-400 max-w-2xl mx-auto">
-            Getting the right cruise insurance is simple. Our specialist advisers do the comparison work for you.
+          <p className="text-gray-300 max-w-2xl mx-auto">
+            Compare cruise insurance providers in minutes and get a quote directly from the insurer — simple, independent, and free to use.
           </p>
         </div>
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
@@ -52,6 +51,13 @@ export default function HowItWorks() {
               <p className="text-gray-400 text-sm">{description}</p>
             </div>
           ))}
+        </div>
+        <div className="text-center mt-10">
+          <Link href="/compare/"
+            className="inline-flex items-center gap-2 bg-sky-500 hover:bg-sky-600 text-white font-semibold px-8 py-4 rounded-xl transition-colors">
+            Compare Providers Now →
+          </Link>
+          <p className="text-gray-500 text-xs mt-3">Independent comparison · No broker fees · Direct to insurer</p>
         </div>
       </div>
     </section>
