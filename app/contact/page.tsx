@@ -104,7 +104,7 @@ export default function ContactPage() {
                 <Phone size={22} className="text-sky-400" />
               </div>
               <h3 className="font-semibold text-white mb-1">Phone</h3>
-              <a href="tel:0988859549" className="text-sky-400 hover:text-sky-300 transition-colors">09 885 9549</a>
+              <a href="mailto:hello@cover4you.co.nz" className="text-sky-400 hover:text-sky-300 transition-colors">hello@cover4you.co.nz</a>
               <p className="text-gray-500 text-xs mt-1">Mon–Fri, 9am–5pm NZT</p>
             </div>
             <div className="text-center p-6">
@@ -132,8 +132,8 @@ export default function ContactPage() {
         <div className="max-w-4xl mx-auto px-4 text-center">
           <h2 className="text-2xl font-bold text-white mb-2">Ready to Cruise with Confidence?</h2>
           <p className="text-sky-100 mb-5">Get free, no-obligation quotes from NZ&apos;s top cruise insurance providers.</p>
-          <a href="tel:0988859549" className="inline-flex items-center gap-2 bg-white text-sky-600 hover:bg-sky-50 font-semibold px-6 py-3 rounded-xl transition-colors">
-            <Phone size={16} /> Call 09 885 9549
+          <a href="mailto:hello@cover4you.co.nz" className="inline-flex items-center gap-2 bg-white text-sky-600 hover:bg-sky-50 font-semibold px-6 py-3 rounded-xl transition-colors">
+            Email Us →
           </a>
         </div>
       </section>

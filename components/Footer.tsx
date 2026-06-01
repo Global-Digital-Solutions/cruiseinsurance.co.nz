@@ -38,7 +38,6 @@ export default function Footer() {
               NZ&apos;s cruise insurance specialists. Connecting Kiwi cruisers with the best cover for their voyage.
             </p>
             <p className="text-gray-400 text-sm">
-              <a href="tel:0988859549" className="hover:text-sky-400 transition-colors">09 885 9549</a><br />
               <a href="mailto:hello@cover4you.co.nz" className="hover:text-sky-400 transition-colors">hello@cover4you.co.nz</a>
             </p>
           </div>

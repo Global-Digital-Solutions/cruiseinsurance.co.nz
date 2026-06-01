@@ -148,8 +148,8 @@ export default function MakingAClaim() {
               <h2 className="text-2xl font-bold mb-2">Need Help With a Claim?</h2>
               <p className="text-sky-100 mb-6">Our team can help guide you through the process and liaise with your insurer on your behalf.</p>
               <div className="flex flex-wrap gap-4">
-                <a href="tel:0988859549" className="flex items-center gap-2 bg-white text-sky-600 hover:bg-sky-50 font-semibold px-5 py-2.5 rounded-xl transition-colors">
-                  <Phone size={16} /> 09 885 9549
+                <a href="mailto:hello@cover4you.co.nz" className="flex items-center gap-2 bg-white text-sky-600 hover:bg-sky-50 font-semibold px-5 py-2.5 rounded-xl transition-colors">
+                  Email Us →
                 </a>
                 <a href="mailto:hello@cover4you.co.nz" className="flex items-center gap-2 border border-white/50 hover:bg-white/10 font-medium px-5 py-2.5 rounded-xl transition-colors">
                   <Mail size={16} /> Email Us
