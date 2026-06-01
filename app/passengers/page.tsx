@@ -15,7 +15,7 @@ export default function PassengersPage() {
   return (
     <>
       <section className="relative bg-[#0c3b6e] text-white py-16 overflow-hidden">
-        <div className="absolute inset-0 bg-cover bg-center opacity-30" style={{ backgroundImage: 'url(https://images.unsplash.com/photo-1544551763-46a013bb70d5?w=1600&q=80)' }} />
+        <div style={{ position: "absolute", inset: 0, backgroundImage: 'url(https://images.unsplash.com/photo-1544551763-46a013bb70d5?w=1600&q=80)', backgroundSize: "cover", backgroundPosition: "center", opacity: 0.30 }} />
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <nav className="text-sm text-blue-300 mb-4 flex gap-2">
             <Link href="/" className="hover:text-white">Home</Link><span>/</span>

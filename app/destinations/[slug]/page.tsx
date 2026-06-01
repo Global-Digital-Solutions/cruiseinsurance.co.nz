@@ -95,7 +95,7 @@ export default async function DestinationPage({ params }: { params: Promise<{ sl
 
       {/* Hero */}
       <section className="relative bg-slate-900 overflow-hidden">
-        <div className="absolute inset-0 bg-cover bg-center opacity-20" style={{ backgroundImage: `url(${heroImage})` }} />
+        <div style={{ position: "absolute", inset: 0, backgroundImage: `url(${heroImage})`, backgroundSize: "cover", backgroundPosition: "center", opacity: 0.20 }} />
         <div className="absolute inset-0 bg-gradient-to-br from-slate-900 via-slate-900/90 to-sky-900/30" />
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 lg:py-20">
           <nav className="flex items-center gap-2 text-sm text-gray-500 mb-6">

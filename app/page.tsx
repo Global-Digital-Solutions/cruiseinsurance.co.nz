@@ -109,22 +109,20 @@ export default function HomePage() {
       {/* ── HERO ── */}
       <section className="relative bg-slate-900 overflow-hidden">
         <div
-          className="absolute inset-0 bg-cover bg-center opacity-20"
-          style={{ backgroundImage: 'url(https://images.unsplash.com/photo-1548574505-5e239809ee19?w=1920&q=80)' }}
+          style={{ position: "absolute", inset: 0, backgroundImage: 'url(https://images.unsplash.com/photo-1548574505-5e239809ee19?w=1920&q=80)', backgroundSize: "cover", backgroundPosition: "center", opacity: 0.20 }}
         />
         <div className="absolute inset-0 bg-gradient-to-br from-slate-900 via-slate-900/90 to-sky-900/40" />
 
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 lg:py-28">
-          <div className="grid lg:grid-cols-2 gap-12 items-center">
+          <div className="max-w-3xl">
             <div>
               <div className="inline-flex items-center gap-2 bg-sky-500/10 border border-sky-500/20 text-sky-400 text-sm px-4 py-2 rounded-full mb-6">
                 <Anchor size={14} />
                 NZ&apos;s Cruise Insurance Specialists
               </div>
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-tight mb-6">
-                Cruise with{' '}
-                <span className="text-sky-400">Complete</span>{' '}
-                Confidence
+                Cruise insurance.
+                <span className="text-sky-400"> Simplified.</span>
               </h1>
               <p className="text-xl text-gray-300 mb-8 leading-relaxed">
                 Compare cruise insurance from NZ&apos;s top providers. Unlimited medical, cabin confinement, emergency evacuation — from{' '}
@@ -153,9 +151,6 @@ export default function HomePage() {
               </div>
             </div>
 
-            <div className="lg:pl-8">
-              <CompareCTA variant="sidebar" />
-            </div>
           </div>
         </div>
       </section>
