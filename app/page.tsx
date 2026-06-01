@@ -286,7 +286,7 @@ export default function HomePage() {
             </Link>
           </div>
           <div className="grid md:grid-cols-3 gap-6">
-            {blogPosts.slice(0, 3).map(post => (
+            {blogPosts.slice(0, 9).map(post => (
               <Link key={post.slug} href={`/blog/${post.slug}`}
                 className="bg-slate-900 rounded-xl overflow-hidden border border-slate-700 hover:border-sky-500/40 transition-colors group">
                 <div className="aspect-video overflow-hidden">
