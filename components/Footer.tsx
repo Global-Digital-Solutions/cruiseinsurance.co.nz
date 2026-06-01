@@ -110,7 +110,7 @@ export default function Footer() {
 
           <div className="flex flex-col md:flex-row md:items-center justify-between gap-4">
             <p className="text-gray-500 text-xs">
-              © {new Date().getFullYear()} CruiseInsurance.co.nz — a trading style of Cover4You. All rights reserved.
+              © {new Date().getFullYear()} CruiseInsurance.co.nz — a trading style of <a href="https://www.cover4you.co.nz" target="_blank" rel="noopener noreferrer" className="hover:text-sky-400 transition-colors">Cover4You</a>. All rights reserved.
             </p>
             <div className="flex flex-wrap gap-4 text-xs">
               {[
