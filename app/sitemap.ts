@@ -1,6 +1,7 @@
 import { MetadataRoute } from 'next';
 
 export const dynamic = 'force-static';
+import { landingPages } from '@/data/landing-pages';
 import { destinationTypes } from '@/data/destination-types';
 import { passengerTypes } from '@/data/passenger-types';
 import { blogPosts } from '@/data/blog-posts';

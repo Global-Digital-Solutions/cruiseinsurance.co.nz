@@ -44,7 +44,7 @@ export default async function BlogPost({ params }: { params: Promise<{ slug: str
 
   const articleSchema = {
     '@context': 'https://schema.org',
-    '@type': 'Article',
+    '@type': 'BlogPosting',
     '@id': `${SITE_URL}/blog/${slug}/#article`,
     headline: post.title,
     description: post.excerpt,
