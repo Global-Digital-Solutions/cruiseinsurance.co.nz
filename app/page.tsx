@@ -3,7 +3,6 @@ import Link from 'next/link';
 import CompareCTA from '@/components/CompareCTA';
 import TrustBlock from '@/components/TrustBlock';
 import HowItWorks from '@/components/HowItWorks';
-import AnimatedStats from '@/components/AnimatedStats';
 import ProviderLogo from '@/components/ProviderLogo';
 import { destinationTypes } from '@/data/destination-types';
 import { passengerTypes } from '@/data/passenger-types';
@@ -155,12 +154,6 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* ── STATS BAR ── */}
-      <section className="bg-sky-600 py-10">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <AnimatedStats />
-        </div>
-      </section>
 
       {/* ── TRUST BLOCK ── */}
       <TrustBlock />
