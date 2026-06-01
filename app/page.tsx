@@ -318,7 +318,7 @@ export default function HomePage() {
       </section>
 
       {/* ── CTA STRIP ── */}
-      <CompareCTA variant="banner" heading="Ready to Compare NZ Cruise Insurance?" subtext="Compare medical cover, cabin confinement, missed port and cancellation limits across NZ cruise insurance providers." />
+      <CompareCTA variant="banner" heading="Ready to Compare Cruise Insurance?" subtext="Compare medical cover, cabin confinement, missed port and cancellation limits across the leading cruise insurance providers." />
 
       {/* ── CRITICAL INFO ── */}
       <section className="py-12 bg-slate-900">
