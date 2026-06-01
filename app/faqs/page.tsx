@@ -1,6 +1,6 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
-import QuoteForm from '@/components/QuoteForm';
+import CompareCTA from '@/components/CompareCTA';
 import { faqs, faqCategories } from '@/data/faqs';
 import { ChevronDown, HelpCircle } from 'lucide-react';
 
@@ -93,7 +93,7 @@ export default function FAQsPage() {
 
           {/* Sidebar */}
           <div className="space-y-6">
-            <QuoteForm variant="compact" />
+            <CompareCTA variant="sidebar" />
 
             <div className="bg-slate-800 rounded-xl p-5 border border-slate-700">
               <h3 className="font-semibold text-white mb-4">Related Guides</h3>
@@ -121,7 +121,7 @@ export default function FAQsPage() {
           <h2 className="text-3xl font-bold text-white mb-4">Still Have Questions?</h2>
           <p className="text-sky-100 mb-6">Our specialist cruise insurance advisers are here to help.</p>
           <div className="flex flex-wrap justify-center gap-4">
-            <Link href="/contact" className="bg-white text-sky-600 hover:bg-sky-50 font-semibold px-6 py-3 rounded-xl transition-colors">
+            <Link href="/compare/" className="bg-white text-sky-600 hover:bg-sky-50 font-semibold px-6 py-3 rounded-xl transition-colors">
               Get Free Quotes →
             </Link>
             <a href="tel:0988859549" className="border border-white/50 text-white hover:bg-white/10 font-medium px-6 py-3 rounded-xl transition-colors">

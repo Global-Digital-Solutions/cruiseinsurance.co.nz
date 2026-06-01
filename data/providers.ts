@@ -12,6 +12,7 @@ export interface Provider {
   limitations: string[];
   avgPremium: string;
   website: string;
+  quoteUrl: string;
 }
 
 export const providers: Provider[] = [
@@ -39,6 +40,7 @@ export const providers: Provider[] = [
     ],
     avgPremium: '~$280',
     website: 'https://1cover.co.nz',
+    quoteUrl: 'https://www.1cover.co.nz/cruise-insurance/',
   },
   {
     slug: 'cover-more',
@@ -64,6 +66,7 @@ export const providers: Provider[] = [
     ],
     avgPremium: '~$310',
     website: 'https://www.covermore.co.nz',
+    quoteUrl: 'https://www.covermore.co.nz/travel-insurance/cruise-travel-insurance',
   },
   {
     slug: 'southern-cross',
@@ -89,6 +92,7 @@ export const providers: Provider[] = [
     ],
     avgPremium: '~$295',
     website: 'https://www.scti.co.nz',
+    quoteUrl: 'https://www.scti.co.nz/travel-insurance/cruise',
   },
   {
     slug: 'travel-insurance-direct',
@@ -114,6 +118,7 @@ export const providers: Provider[] = [
     ],
     avgPremium: '~$245',
     website: 'https://www.travelinsurancedirect.co.nz',
+    quoteUrl: 'https://www.travelinsurancedirect.co.nz/travel/cruise-travel-insurance',
   },
   {
     slug: 'insure-and-go',
@@ -139,6 +144,7 @@ export const providers: Provider[] = [
     ],
     avgPremium: '~$265',
     website: 'https://www.insureandgo.co.nz',
+    quoteUrl: 'https://www.insureandgo.co.nz/travel-insurance/cruise/',
   },
   {
     slug: 'allianz',
@@ -164,6 +170,7 @@ export const providers: Provider[] = [
     ],
     avgPremium: '~$340',
     website: 'https://www.allianz.co.nz',
+    quoteUrl: 'https://www.allianztravel.co.nz/travel-insurance/cruise-travel-insurance.html',
   },
 ];
 

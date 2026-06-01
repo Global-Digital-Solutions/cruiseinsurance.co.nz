@@ -85,12 +85,11 @@ export default function NavBar() {
           </div>
 
           <div className="hidden lg:flex items-center gap-3">
-            <a href="tel:0988859549" className="text-sm text-gray-300 hover:text-white">09 885 9549</a>
-            <Link
-              href="/contact"
+<Link
+              href="/compare/"
               className="bg-sky-500 hover:bg-sky-600 text-white text-sm font-semibold px-4 py-2 rounded-lg transition-colors"
             >
-              Get a Quote
+              Compare Providers
             </Link>
           </div>
 
@@ -103,7 +102,7 @@ export default function NavBar() {
 
       {/* Mobile menu */}
       {open && (
-        <div className="lg:hidden bg-slate-800 border-t border-slate-700 px-4 py-4 space-y-1">
+        <div className="lg:hidden bg-slate-800 border-t border-slate-700 px-4 py-4 space-y-1 overflow-y-auto max-h-[calc(100vh-4rem)]">
           <p className="text-xs font-semibold text-gray-500 uppercase tracking-wide px-3 pt-1">Destinations</p>
           {destinations.map(d => (
             <Link key={d.href} href={d.href} onClick={() => setOpen(false)}
@@ -134,9 +133,9 @@ export default function NavBar() {
             ))}
           </div>
           <div className="pt-3">
-            <Link href="/contact" onClick={() => setOpen(false)}
+            <Link href="/compare/" onClick={() => setOpen(false)}
               className="block w-full text-center bg-sky-500 hover:bg-sky-600 text-white font-semibold py-2.5 rounded-lg transition-colors">
-              Get a Free Quote
+              Compare Providers →
             </Link>
           </div>
         </div>

@@ -1,6 +1,6 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
-import QuoteForm from '@/components/QuoteForm';
+import CompareCTA from '@/components/CompareCTA';
 import { destinationTypes } from '@/data/destination-types';
 import { passengerTypes } from '@/data/passenger-types';
 import { CheckCircle, BookOpen } from 'lucide-react';
@@ -145,7 +145,7 @@ Waiting until the last minute may mean events that occur after booking but befor
               </div>
             </div>
             <div>
-              <QuoteForm variant="compact" />
+              <CompareCTA variant="sidebar" />
             </div>
           </div>
         </div>
@@ -182,7 +182,7 @@ Waiting until the last minute may mean events that occur after booking but befor
 
           {/* Sidebar */}
           <div className="space-y-6">
-            <QuoteForm variant="compact" />
+            <CompareCTA variant="sidebar" />
 
             <div className="bg-slate-800 rounded-xl p-5 border border-slate-700">
               <h3 className="font-semibold text-white mb-4">Insurance by Destination</h3>

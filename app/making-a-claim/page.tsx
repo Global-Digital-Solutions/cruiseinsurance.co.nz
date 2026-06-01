@@ -1,6 +1,6 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
-import QuoteForm from '@/components/QuoteForm';
+import CompareCTA from '@/components/CompareCTA';
 import { Phone, Mail, FileText, CheckCircle, AlertTriangle, Clock } from 'lucide-react';
 
 const SITE_URL = 'https://www.cruiseinsurance.co.nz';
@@ -160,7 +160,7 @@ export default function MakingAClaim() {
 
           {/* Sidebar */}
           <div className="space-y-6">
-            <QuoteForm variant="compact" />
+            <CompareCTA variant="sidebar" />
 
             <div className="bg-slate-800 rounded-xl p-5 border border-slate-700">
               <h3 className="font-semibold text-white mb-4">Quick Links</h3>

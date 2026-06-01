@@ -1,6 +1,6 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
-import QuoteForm from '@/components/QuoteForm';
+import CompareCTA from '@/components/CompareCTA';
 import TrustBlock from '@/components/TrustBlock';
 import HowItWorks from '@/components/HowItWorks';
 import AnimatedStats from '@/components/AnimatedStats';
@@ -142,7 +142,7 @@ export default function HomePage() {
               </div>
 
               <div className="flex flex-wrap gap-3">
-                <Link href="/contact"
+                <Link href="/compare/"
                   className="bg-sky-500 hover:bg-sky-600 text-white font-semibold px-6 py-3 rounded-xl transition-colors">
                   Get Free Quotes →
                 </Link>
@@ -154,7 +154,7 @@ export default function HomePage() {
             </div>
 
             <div className="lg:pl-8">
-              <QuoteForm variant="compact" />
+              <CompareCTA variant="sidebar" />
             </div>
           </div>
         </div>
@@ -308,7 +308,7 @@ export default function HomePage() {
       </section>
 
       {/* ── CTA STRIP ── */}
-      <QuoteForm variant="full" />
+      <CompareCTA variant="banner" heading="Ready to Compare NZ Cruise Insurance?" subtext="Compare medical cover, cabin confinement, missed port and cancellation limits across NZ cruise insurance providers." />
 
       {/* ── CRITICAL INFO ── */}
       <section className="py-12 bg-slate-900">

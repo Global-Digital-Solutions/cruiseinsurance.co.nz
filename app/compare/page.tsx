@@ -1,6 +1,6 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
-import QuoteForm from '@/components/QuoteForm';
+import CompareCTA from '@/components/CompareCTA';
 import { providers } from '@/data/providers';
 import { Star, CheckCircle, X } from 'lucide-react';
 
@@ -100,7 +100,7 @@ export default function ComparePage() {
 
               <div className="flex items-center justify-between">
                 <span className="text-sky-400 font-semibold text-sm">{p.avgPremium}</span>
-                <Link href="/contact"
+                <Link href="/compare/"
                   className="bg-sky-500 hover:bg-sky-600 text-white text-xs font-semibold px-3 py-1.5 rounded-lg transition-colors">
                   Get a Quote
                 </Link>
@@ -172,7 +172,7 @@ export default function ComparePage() {
               The comparison above shows general features. Your actual quote will depend on your specific requirements. Some policies may offer better value than others for your particular situation.
             </p>
           </div>
-          <QuoteForm variant="compact" />
+          <CompareCTA variant="sidebar" />
         </div>
       </div>
     </>

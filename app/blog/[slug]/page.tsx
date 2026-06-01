@@ -1,7 +1,7 @@
 import type { Metadata } from 'next';
 import { notFound } from 'next/navigation';
 import Link from 'next/link';
-import QuoteForm from '@/components/QuoteForm';
+import CompareCTA from '@/components/CompareCTA';
 import { blogPosts, getBlogPostBySlug } from '@/data/blog-posts';
 import { getAuthorByName } from '@/data/authors';
 import { Calendar, Clock, ArrowLeft } from 'lucide-react';
@@ -167,7 +167,7 @@ export default async function BlogPost({ params }: { params: Promise<{ slug: str
 
           {/* Sidebar */}
           <div className="space-y-6">
-            <QuoteForm variant="compact" />
+            <CompareCTA variant="sidebar" />
 
             <div className="bg-slate-800 rounded-xl p-5 border border-slate-700">
               <h3 className="font-semibold text-white mb-4">Related Articles</h3>

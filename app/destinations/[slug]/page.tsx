@@ -1,7 +1,7 @@
 import type { Metadata } from 'next';
 import { notFound } from 'next/navigation';
 import Link from 'next/link';
-import QuoteForm from '@/components/QuoteForm';
+import CompareCTA from '@/components/CompareCTA';
 import { destinationTypes, getDestinationBySlug } from '@/data/destination-types';
 import { passengerTypes } from '@/data/passenger-types';
 import { faqs } from '@/data/faqs';
@@ -127,7 +127,7 @@ export default async function DestinationPage({ params }: { params: Promise<{ sl
               </div>
             </div>
             <div>
-              <QuoteForm variant="compact" />
+              <CompareCTA variant="sidebar" />
             </div>
           </div>
         </div>
@@ -187,7 +187,7 @@ export default async function DestinationPage({ params }: { params: Promise<{ sl
 
           {/* Sidebar */}
           <div className="space-y-6">
-            <QuoteForm variant="compact" />
+            <CompareCTA variant="sidebar" />
 
             <div className="bg-slate-800 rounded-xl p-5 border border-slate-700">
               <h3 className="font-semibold text-white mb-4">Other Destinations</h3>

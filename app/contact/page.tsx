@@ -1,6 +1,6 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
-import QuoteForm from '@/components/QuoteForm';
+import CompareCTA from '@/components/CompareCTA';
 import { Phone, Mail, MapPin, Clock, Shield, CheckCircle, Users } from 'lucide-react';
 
 const SITE_URL = 'https://www.cruiseinsurance.co.nz';
@@ -88,7 +88,7 @@ export default function ContactPage() {
 
           {/* Right: form */}
           <div>
-            <QuoteForm variant="compact" />
+            <CompareCTA variant="sidebar" />
           </div>
         </div>
       </div>
