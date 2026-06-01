@@ -38,21 +38,20 @@ export default function FAQsPage() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
 
       {/* Dark header */}
-      <section className="bg-slate-800 border-b border-slate-700 py-12">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <nav className="flex items-center gap-2 text-sm text-gray-500 mb-4">
-            <Link href="/" className="hover:text-sky-400">Home</Link>
+      <section className="relative bg-slate-900 text-white py-20 overflow-hidden min-h-[280px] flex items-end">
+        <div className="absolute inset-0">
+          <img src="https://images.unsplash.com/photo-1548574505-5e239809ee19?w=1600&q=80" alt="" className="w-full h-full object-cover" style={{ opacity: 0.75 }} />
+          <div className="absolute inset-0" style={{ background: 'linear-gradient(to top, rgba(15,23,42,0.90) 0%, rgba(15,23,42,0.30) 60%, transparent 100%)' }} />
+        </div>
+        <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pb-2 w-full">
+          <nav className="flex items-center gap-2 text-sm text-sky-300 mb-5">
+            <Link href="/" className="hover:text-white">Home</Link>
             <span>/</span>
-            <span className="text-gray-300">FAQs</span>
+            <span className="text-white">FAQs</span>
           </nav>
-          <div className="flex items-center gap-3 mb-4">
-            <div className="w-10 h-10 bg-sky-500/10 rounded-xl flex items-center justify-center">
-              <HelpCircle size={20} className="text-sky-400" />
-            </div>
-            <h1 className="text-4xl font-bold text-white">Cruise Insurance FAQs</h1>
-          </div>
-          <p className="text-gray-400 text-lg max-w-2xl">
-            Comprehensive answers to the most common questions about cruise insurance for New Zealand travellers.
+          <h1 className="text-4xl md:text-5xl font-bold text-white mb-3">Cruise Insurance FAQs</h1>
+          <p className="text-gray-200 text-lg max-w-2xl">
+            Answers to the most common questions about cruise insurance.
           </p>
         </div>
       </section>
