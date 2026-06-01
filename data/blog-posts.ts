@@ -69,7 +69,7 @@ export const blogPosts: BlogPost[] = [
     excerpt: 'Senior travellers face unique insurance challenges — pre-existing conditions, age limits, and higher medical risks. This guide helps Kiwis over 60 find the right cruise cover.',
     category: 'Seniors',
     readTime: '11 min',
-    image: 'https://images.unsplash.com/photo-1580835239846-5bb9ce5f3b24?w=1200&q=80',
+    image: 'https://images.unsplash.com/photo-1559827260-dc66d52bef19?w=1200&q=80',
   },
   {
     slug: 'pre-existing-conditions-cruise',
