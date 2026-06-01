@@ -120,7 +120,7 @@ export default function AboutPage() {
           <h2 className="text-3xl font-bold text-white mb-4">Ready to Cruise with Confidence?</h2>
           <p className="text-sky-100 mb-6">Get free quotes from NZ&apos;s leading cruise insurance providers.</p>
           <Link href="/compare/" className="inline-block bg-white text-sky-600 hover:bg-sky-50 font-semibold px-8 py-3 rounded-xl transition-colors">
-            Get a Free Quote →
+            Compare Providers →
           </Link>
         </div>
       </section>

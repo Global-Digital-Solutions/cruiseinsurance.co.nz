@@ -153,7 +153,7 @@ export default async function PassengerPage({ params }: { params: Promise<{ slug
           <span>✓ Emergency Evacuation</span>
           <span>✓ Cabin Confinement</span>
           <span>✓ 24hr Response</span>
-          <span>✓ Free Quotes</span>
+          <span>✓ Instant Cover</span>
         </div>
       </div>
 

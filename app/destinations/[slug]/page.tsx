@@ -143,7 +143,7 @@ export default async function DestinationPage({ params }: { params: Promise<{ sl
           <span>✓ Emergency Evacuation</span>
           <span>✓ Cabin Confinement</span>
           <span>✓ Pre-Existing Conditions</span>
-          <span>✓ Free Quotes</span>
+          <span>✓ Instant Cover</span>
         </div>
       </div>
 

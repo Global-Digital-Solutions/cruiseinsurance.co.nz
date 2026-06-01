@@ -121,7 +121,7 @@ export default function FAQsPage() {
           <p className="text-sky-100 mb-6">Our specialist cruise insurance advisers are here to help.</p>
           <div className="flex flex-wrap justify-center gap-4">
             <Link href="/compare/" className="bg-white text-sky-600 hover:bg-sky-50 font-semibold px-6 py-3 rounded-xl transition-colors">
-              Get Free Quotes →
+              Get Covered Now →
             </Link>
             <a href="tel:0988859549" className="border border-white/50 text-white hover:bg-white/10 font-medium px-6 py-3 rounded-xl transition-colors">
               📞 09 885 9549
