@@ -4,7 +4,7 @@ import { notFound } from 'next/navigation';
 import { landingPages, getLandingPageBySlug } from '@/data/landing-pages';
 import { providers } from '@/data/providers';
 import CompareCTA from '@/components/CompareCTA';
-import { CheckCircle } from 'lucide-react';
+import { CheckCircle, DollarSign } from 'lucide-react';
 
 const SITE_URL = 'https://www.cruiseinsurance.co.nz';
 
@@ -42,7 +42,7 @@ export default async function LandingPage({ params }: { params: Promise<{ slug: 
     name: page.metaTitle,
     description: page.metaDescription,
     url: pageUrl,
-    dateModified: '2026-05-30',
+    dateModified: '2026-06-01',
     publisher: { '@type': 'Organization', name: 'CruiseInsurance.co.nz', url: SITE_URL },
   };
 
@@ -98,18 +98,77 @@ export default async function LandingPage({ params }: { params: Promise<{ slug: 
         <div className="grid lg:grid-cols-3 gap-10">
           {/* Main */}
           <div className="lg:col-span-2">
+
             {/* Sections */}
             <div className="space-y-10 mb-12">
               {page.sections.map((s, i) => (
                 <div key={i}>
-                  <h2 className="text-2xl font-bold text-white mb-3 flex items-center gap-3">
+                  <h2 className="text-2xl font-bold text-white mb-4 flex items-center gap-3">
                     <span className="w-1 h-7 bg-sky-500 rounded-full flex-shrink-0 inline-block" />
                     {s.heading}
                   </h2>
-                  <p className="text-gray-400 leading-relaxed">{s.body}</p>
+                  <div className="space-y-4">
+                    {Array.isArray(s.body)
+                      ? s.body.map((para, pi) => (
+                          <p key={pi} className="text-gray-400 leading-relaxed">{para}</p>
+                        ))
+                      : <p className="text-gray-400 leading-relaxed">{s.body}</p>
+                    }
+                  </div>
                 </div>
               ))}
             </div>
+
+            {/* Coverage Points Checklist */}
+            {page.coveragePoints && page.coveragePoints.length > 0 && (
+              <div className="bg-slate-800/60 rounded-2xl p-6 border border-slate-700 mb-12">
+                <h2 className="text-xl font-bold text-white mb-5 flex items-center gap-3">
+                  <span className="w-1 h-6 bg-sky-500 rounded-full flex-shrink-0 inline-block" />
+                  {page.title} — What&apos;s Included
+                </h2>
+                <div className="grid sm:grid-cols-2 gap-3">
+                  {page.coveragePoints.map((point, i) => (
+                    <div key={i} className="flex items-start gap-2.5 text-sm text-gray-300">
+                      <CheckCircle size={15} className="text-sky-400 mt-0.5 flex-shrink-0" />
+                      <span>{point}</span>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            )}
+
+            {/* Cost Guide Table */}
+            {page.costGuide && page.costGuide.length > 0 && (
+              <div className="mb-12">
+                <h2 className="text-2xl font-bold text-white mb-5 flex items-center gap-3">
+                  <span className="w-1 h-7 bg-sky-500 rounded-full flex-shrink-0 inline-block" />
+                  Indicative Premium Guide
+                </h2>
+                <div className="bg-slate-800 rounded-xl overflow-hidden border border-slate-700">
+                  <div className="flex items-center gap-3 px-5 py-3 bg-slate-700/50 border-b border-slate-700">
+                    <DollarSign size={16} className="text-sky-400" />
+                    <p className="text-xs text-gray-400">Estimates only — get a live quote for your specific age, conditions and voyage.</p>
+                  </div>
+                  <table className="w-full text-sm">
+                    <thead>
+                      <tr className="border-b border-slate-700">
+                        <th className="text-left p-4 text-gray-400 font-medium">Cruise / Scenario</th>
+                        <th className="text-right p-4 text-gray-400 font-medium">Est. Premium</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      {page.costGuide.map((row, i) => (
+                        <tr key={i} className={`border-b border-slate-700/50 ${i % 2 === 0 ? '' : 'bg-slate-700/20'}`}>
+                          <td className="p-4 text-gray-300">{row.item}</td>
+                          <td className="p-4 text-right text-sky-400 font-semibold whitespace-nowrap">{row.range}</td>
+                        </tr>
+                      ))}
+                    </tbody>
+                  </table>
+                </div>
+                <p className="text-xs text-gray-500 mt-2 px-1">* Premiums are estimates for healthy adults. Age loadings and pre-existing condition assessments will affect the actual premium. Get a live quote for accuracy.</p>
+              </div>
+            )}
 
             {/* Provider quick-links */}
             <div className="mb-12">
@@ -128,7 +187,7 @@ export default async function LandingPage({ params }: { params: Promise<{ slug: 
                         <span className="text-xs text-gray-400">{p.rating.toFixed(1)} · {p.avgPremium}</span>
                       </div>
                     </div>
-                    <span className="text-xs font-bold text-sky-400 group-hover:text-sky-300 whitespace-nowrap">Quote →</span>
+                    <span className="text-xs font-bold text-sky-400 group-hover:text-sky-300 whitespace-nowrap">Get Quote →</span>
                   </a>
                 ))}
               </div>
@@ -150,7 +209,7 @@ export default async function LandingPage({ params }: { params: Promise<{ slug: 
                   {page.faqs.map((faq, i) => (
                     <details key={i} className="bg-slate-800 rounded-xl border border-slate-700 group hover:border-sky-500/40 transition-colors">
                       <summary className="flex items-center justify-between p-5 cursor-pointer text-white font-medium">
-                        {faq.q}
+                        <span className="pr-4">{faq.q}</span>
                         <span className="text-sky-400 font-black text-xl ml-3 flex-shrink-0 group-open:rotate-45 transition-transform duration-200">+</span>
                       </summary>
                       <div className="px-5 pb-5 text-gray-400 text-sm leading-relaxed border-t border-slate-700 pt-4">{faq.a}</div>
@@ -173,6 +232,9 @@ export default async function LandingPage({ params }: { params: Promise<{ slug: 
                   { href: '/nz-cruise-insurance/cruise-travel-insurance/', label: 'Cruise Travel Insurance' },
                   { href: '/nz-cruise-insurance/senior-cruise-insurance/', label: 'Senior Cruise Insurance' },
                   { href: '/nz-cruise-insurance/family-cruise-insurance/', label: 'Family Cruise Insurance' },
+                  { href: '/nz-cruise-insurance/medical-cover-cruise/', label: 'Medical Cover for Cruise' },
+                  { href: '/nz-cruise-insurance/comprehensive-cruise-insurance/', label: 'Comprehensive Cover' },
+                  { href: '/nz-cruise-insurance/cruise-cancellation-insurance/', label: 'Cancellation Insurance' },
                   { href: '/compare/', label: 'Compare All Providers →' },
                 ].filter(l => l.href !== `/nz-cruise-insurance/${page.slug}/`).map(l => (
                   <li key={l.href}>
@@ -189,6 +251,14 @@ export default async function LandingPage({ params }: { params: Promise<{ slug: 
                 <li className="flex gap-2"><CheckCircle size={13} className="text-sky-400 mt-0.5 flex-shrink-0" />All providers are regulated NZ insurers</li>
                 <li className="flex gap-2"><CheckCircle size={13} className="text-sky-400 mt-0.5 flex-shrink-0" />No broker fees — direct to insurer</li>
               </ul>
+            </div>
+            {/* Quick CTA */}
+            <div className="bg-sky-600/20 border border-sky-500/30 rounded-xl p-5">
+              <p className="text-sky-300 text-sm font-semibold mb-3">Ready to get covered?</p>
+              <p className="text-gray-400 text-xs mb-4">Compare quotes from all 6 providers side by side and find the best deal for your cruise.</p>
+              <Link href="/compare/" className="block w-full text-center bg-sky-500 hover:bg-sky-400 text-white font-bold py-2.5 rounded-lg transition-colors text-sm">
+                Compare Now →
+              </Link>
             </div>
           </div>
         </div>
