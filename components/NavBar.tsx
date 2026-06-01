@@ -1,6 +1,6 @@
 'use client';
 
-import { useState } from 'react';
+import { useState, useRef, useEffect } from 'react';
 import Link from 'next/link';
 import { Menu, X, Anchor, ChevronDown } from 'lucide-react';
 
@@ -8,6 +8,15 @@ export default function NavBar() {
   const [open, setOpen] = useState(false);
   const [destsOpen, setDestsOpen] = useState(false);
   const [passOpen, setPassOpen] = useState(false);
+
+  useEffect(() => {
+    const handler = (e: MouseEvent) => {
+      const target = e.target as HTMLElement;
+      if (!target.closest('nav')) { setDestsOpen(false); setPassOpen(false); }
+    };
+    document.addEventListener('mousedown', handler);
+    return () => document.removeEventListener('mousedown', handler);
+  }, []);
 
   const destinations = [
     { href: '/destinations/domestic-cruise-insurance', label: 'NZ Domestic Cruises' },
@@ -46,15 +55,17 @@ export default function NavBar() {
 
           {/* Desktop nav */}
           <div className="hidden lg:flex items-center gap-1">
-            {/* Destinations dropdown */}
-            <div className="relative" onMouseEnter={() => setDestsOpen(true)} onMouseLeave={() => setDestsOpen(false)}>
-              <button className="flex items-center gap-1 px-3 py-2 text-sm text-gray-300 hover:text-white rounded-lg hover:bg-slate-800 transition-colors">
-                Destinations <ChevronDown size={14} />
+            {/* Destinations dropdown — click-based */}
+            <div className="relative">
+              <button onClick={() => { setDestsOpen(!destsOpen); setPassOpen(false); }}
+                className="flex items-center gap-1 px-3 py-2 text-sm text-gray-300 hover:text-white rounded-lg hover:bg-slate-800 transition-colors">
+                Destinations <ChevronDown size={14} className={destsOpen ? 'rotate-180 transition-transform' : 'transition-transform'} />
               </button>
               {destsOpen && (
-                <div className="absolute top-full left-0 mt-1 w-56 bg-slate-800 rounded-xl shadow-xl border border-slate-700 py-2 z-50">
+                <div className="absolute top-full left-0 w-56 bg-slate-800 rounded-xl shadow-xl border border-slate-700 py-2 z-50">
                   {destinations.map(d => (
-                    <Link key={d.href} href={d.href} className="block px-4 py-2 text-sm text-gray-300 hover:text-white hover:bg-slate-700">
+                    <Link key={d.href} href={d.href} onClick={() => setDestsOpen(false)}
+                      className="block px-4 py-2 text-sm text-gray-300 hover:text-white hover:bg-slate-700">
                       {d.label}
                     </Link>
                   ))}
@@ -62,15 +73,17 @@ export default function NavBar() {
               )}
             </div>
 
-            {/* Who's Travelling dropdown */}
-            <div className="relative" onMouseEnter={() => setPassOpen(true)} onMouseLeave={() => setPassOpen(false)}>
-              <button className="flex items-center gap-1 px-3 py-2 text-sm text-gray-300 hover:text-white rounded-lg hover:bg-slate-800 transition-colors">
-                Who&apos;s Travelling <ChevronDown size={14} />
+            {/* Who's Travelling dropdown — click-based */}
+            <div className="relative">
+              <button onClick={() => { setPassOpen(!passOpen); setDestsOpen(false); }}
+                className="flex items-center gap-1 px-3 py-2 text-sm text-gray-300 hover:text-white rounded-lg hover:bg-slate-800 transition-colors">
+                Who&apos;s Travelling <ChevronDown size={14} className={passOpen ? 'rotate-180 transition-transform' : 'transition-transform'} />
               </button>
               {passOpen && (
-                <div className="absolute top-full left-0 mt-1 w-56 bg-slate-800 rounded-xl shadow-xl border border-slate-700 py-2 z-50">
+                <div className="absolute top-full left-0 w-56 bg-slate-800 rounded-xl shadow-xl border border-slate-700 py-2 z-50">
                   {passengers.map(p => (
-                    <Link key={p.href} href={p.href} className="block px-4 py-2 text-sm text-gray-300 hover:text-white hover:bg-slate-700">
+                    <Link key={p.href} href={p.href} onClick={() => setPassOpen(false)}
+                      className="block px-4 py-2 text-sm text-gray-300 hover:text-white hover:bg-slate-700">
                       {p.label}
                     </Link>
                   ))}
