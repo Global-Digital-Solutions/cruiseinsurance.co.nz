@@ -236,6 +236,39 @@ export default function HomePage() {
         </div>
       </section>
 
+
+      {/* ── INSURANCE TYPES ── */}
+      <section className="py-14 bg-slate-800 border-y border-slate-700">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 mb-8">
+            <div>
+              <h2 className="text-2xl font-bold text-white">Cruise Insurance Guides</h2>
+              <p className="text-gray-400 mt-1 text-sm">Find the right cover for your situation</p>
+            </div>
+          </div>
+          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-3">
+            {[
+              { href: "/nz-cruise-insurance/cheap-cruise-insurance/", label: "Cheap Cruise Insurance", icon: "💰" },
+              { href: "/nz-cruise-insurance/cruise-travel-insurance/", label: "Cruise Travel Insurance", icon: "🚢" },
+              { href: "/nz-cruise-insurance/senior-cruise-insurance/", label: "Senior Cruise Insurance", icon: "👥" },
+              { href: "/nz-cruise-insurance/family-cruise-insurance/", label: "Family Cruise Insurance", icon: "👨‍👩‍👧" },
+              { href: "/nz-cruise-insurance/cruise-cancellation-insurance/", label: "Cancellation Insurance", icon: "📋" },
+              { href: "/nz-cruise-insurance/last-minute-cruise-insurance/", label: "Last Minute Cover", icon: "⚡" },
+              { href: "/nz-cruise-insurance/medical-cover-cruise/", label: "Medical Cover", icon: "🏥" },
+              { href: "/nz-cruise-insurance/comprehensive-cruise-insurance/", label: "Comprehensive Cover", icon: "✅" },
+              { href: "/nz-cruise-insurance/cruise-insurance-quotes/", label: "Insurance Quotes", icon: "💬" },
+              { href: "/nz-cruise-insurance/best-cruise-insurance-nz/", label: "Best Cruise Insurance", icon: "⭐" },
+            ].map(item => (
+              <Link key={item.href} href={item.href}
+                className="bg-slate-900 rounded-xl p-4 border border-slate-700 hover:border-sky-500/50 transition-colors group text-center">
+                <div className="text-2xl mb-2">{item.icon}</div>
+                <p className="text-xs font-medium text-gray-300 group-hover:text-sky-400 transition-colors leading-tight">{item.label}</p>
+              </Link>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* ── HOW IT WORKS ── */}
       <HowItWorks />
 

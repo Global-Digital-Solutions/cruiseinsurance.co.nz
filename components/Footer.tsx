@@ -75,13 +75,13 @@ export default function Footer() {
             <h3 className="text-sm font-semibold text-white uppercase tracking-wide mb-4">Resources</h3>
             <ul className="space-y-2">
               {[
-                { href: '/compare', label: 'Compare Providers' },
-                { href: '/cruise-insurance-guide', label: 'Cruise Insurance Guide' },
-                { href: '/making-a-claim', label: 'Making a Claim' },
-                { href: '/faqs', label: 'FAQs' },
-                { href: '/blog', label: 'Blog & Articles' },
-                { href: '/about', label: 'About Us' },
-                { href: '/contact', label: 'Contact Us' },
+                { href: '/compare/', label: 'Compare Providers' },
+                { href: '/cruise-insurance-guide/', label: 'Cruise Insurance Guide' },
+                { href: '/making-a-claim/', label: 'Making a Claim' },
+                { href: '/faqs/', label: 'FAQs' },
+                { href: '/blog/', label: 'Guides & News' },
+                { href: '/about/', label: 'About Us' },
+                { href: '/contact/', label: 'Contact Us' },
               ].map(l => (
                 <li key={l.href}>
                   <Link href={l.href} className="text-gray-400 hover:text-sky-400 text-sm transition-colors">
@@ -90,6 +90,29 @@ export default function Footer() {
                 </li>
               ))}
             </ul>
+          </div>
+        </div>
+
+        {/* Insurance Types — full width row below main columns */}
+        <div className="mt-8 pt-6 border-t border-slate-800">
+          <h3 className="text-sm font-semibold text-white uppercase tracking-wide mb-4">Cruise Insurance Types</h3>
+          <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-2">
+            {[
+              { href: '/nz-cruise-insurance/cheap-cruise-insurance/', label: 'Cheap Cruise Insurance' },
+              { href: '/nz-cruise-insurance/best-cruise-insurance-nz/', label: 'Best Cruise Insurance' },
+              { href: '/nz-cruise-insurance/cruise-travel-insurance/', label: 'Cruise Travel Insurance' },
+              { href: '/nz-cruise-insurance/senior-cruise-insurance/', label: 'Senior Cruise Insurance' },
+              { href: '/nz-cruise-insurance/family-cruise-insurance/', label: 'Family Cruise Insurance' },
+              { href: '/nz-cruise-insurance/cruise-cancellation-insurance/', label: 'Cancellation Insurance' },
+              { href: '/nz-cruise-insurance/last-minute-cruise-insurance/', label: 'Last Minute Cover' },
+              { href: '/nz-cruise-insurance/medical-cover-cruise/', label: 'Medical Cover' },
+              { href: '/nz-cruise-insurance/comprehensive-cruise-insurance/', label: 'Comprehensive Cover' },
+              { href: '/nz-cruise-insurance/cruise-insurance-quotes/', label: 'Insurance Quotes' },
+            ].map(l => (
+              <Link key={l.href} href={l.href} className="text-gray-500 hover:text-sky-400 text-xs transition-colors">
+                {l.label}
+              </Link>
+            ))}
           </div>
         </div>
 
