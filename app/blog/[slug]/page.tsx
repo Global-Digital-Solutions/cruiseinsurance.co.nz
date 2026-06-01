@@ -4,7 +4,7 @@ import Link from 'next/link';
 import CompareCTA from '@/components/CompareCTA';
 import { blogPosts, getBlogPostBySlug } from '@/data/blog-posts';
 import { getAuthorByName } from '@/data/authors';
-import { Calendar, Clock, ArrowLeft } from 'lucide-react';
+import { Calendar, Clock, ArrowLeft, CheckCircle } from 'lucide-react';
 
 const SITE_URL = 'https://www.cruiseinsurance.co.nz';
 
@@ -77,6 +77,7 @@ export default async function BlogPost({ params }: { params: Promise<{ slug: str
 
       {/* Hero image */}
       <div className="w-full aspect-[21/9] max-h-80 overflow-hidden">
+        {/* eslint-disable-next-line @next/next/no-img-element */}
         <img src={post.image} alt={post.title} className="w-full h-full object-cover" />
       </div>
 
@@ -84,7 +85,7 @@ export default async function BlogPost({ params }: { params: Promise<{ slug: str
         <div className="grid lg:grid-cols-3 gap-10">
           {/* Article */}
           <article className="lg:col-span-2">
-            <Link href="/blog" className="inline-flex items-center gap-1 text-sm text-gray-400 hover:text-sky-400 transition-colors mb-6">
+            <Link href="/blog/" className="inline-flex items-center gap-1 text-sm text-gray-400 hover:text-sky-400 transition-colors mb-6">
               <ArrowLeft size={14} /> Back to Blog
             </Link>
 
@@ -97,58 +98,130 @@ export default async function BlogPost({ params }: { params: Promise<{ slug: str
             <h1 className="text-3xl md:text-4xl font-bold text-white mb-6 leading-tight">{post.title}</h1>
             <p className="text-xl text-gray-300 mb-8 leading-relaxed border-l-4 border-sky-500 pl-4">{post.excerpt}</p>
 
-            {/* Placeholder content */}
-            <div className="prose-dark space-y-4 text-gray-400">
-              <p className="leading-relaxed">
-                Cruise insurance is an essential protection for any New Zealand traveller embarking on a cruise holiday.
-                Whether you&apos;re sailing domestically around New Zealand, exploring the South Pacific islands, or venturing
-                further afield to Asia, Europe, or beyond, the right cruise insurance policy protects your investment and
-                your health.
-              </p>
-              <p className="leading-relaxed">
-                Standard travel insurance policies are designed for land-based holidays. They often exclude or inadequately
-                cover the unique risks associated with cruising — including onboard medical expenses, cabin confinement,
-                missed port departures, and the high cost of maritime medical evacuations.
-              </p>
-              <p className="leading-relaxed">
-                Our specialist cruise insurance advisers compare policies from New Zealand&apos;s leading providers to find
-                the best cover for your specific cruise, destination, and traveller profile. Whether you&apos;re a solo
-                adventurer, a couple celebrating an anniversary, a family on a first cruise, or a senior with pre-existing
-                conditions — we have the expertise to find the right policy.
-              </p>
+            {/* Structured article content */}
+            {post.sections && post.sections.length > 0 ? (
+              <div className="space-y-1 text-gray-400">
 
-              <div className="bg-slate-800 rounded-xl p-6 border border-slate-700 my-6">
-                <h3 className="text-lg font-semibold text-white mb-3">Key Takeaways</h3>
-                <ul className="space-y-2">
-                  <li className="flex items-start gap-2 text-sm">
-                    <span className="text-sky-400 mt-0.5">✓</span>
-                    Cruise insurance covers risks that standard travel insurance doesn&apos;t
-                  </li>
-                  <li className="flex items-start gap-2 text-sm">
-                    <span className="text-sky-400 mt-0.5">✓</span>
-                    Unlimited medical cover is essential for maritime travel
-                  </li>
-                  <li className="flex items-start gap-2 text-sm">
-                    <span className="text-sky-400 mt-0.5">✓</span>
-                    Pre-existing conditions can be covered with full disclosure
-                  </li>
-                  <li className="flex items-start gap-2 text-sm">
-                    <span className="text-sky-400 mt-0.5">✓</span>
-                    Buy insurance as soon as you make your first trip payment
-                  </li>
-                </ul>
+                {/* Key takeaways */}
+                {post.keyTakeaways && post.keyTakeaways.length > 0 && (
+                  <div className="bg-slate-800 rounded-xl p-6 border border-slate-700 mb-8">
+                    <h3 className="text-base font-semibold text-white mb-4">Key Takeaways</h3>
+                    <ul className="space-y-2">
+                      {post.keyTakeaways.map((item, i) => (
+                        <li key={i} className="flex items-start gap-2 text-sm text-gray-300">
+                          <CheckCircle size={14} className="text-sky-400 mt-0.5 flex-shrink-0" />
+                          {item}
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+                )}
+
+                {/* Sections */}
+                {post.sections.map((section, si) => (
+                  <div key={si} className="mb-8">
+                    {section.h2 && (
+                      <h2 className="text-2xl font-bold text-white mt-10 mb-4">{section.h2}</h2>
+                    )}
+                    {section.h3 && (
+                      <h3 className="text-lg font-semibold text-white mt-6 mb-3">{section.h3}</h3>
+                    )}
+                    {section.paragraphs && section.paragraphs.map((para, pi) => (
+                      <p key={pi} className="leading-relaxed mb-4 text-gray-400">{para}</p>
+                    ))}
+                    {section.callout && (
+                      <div className="bg-sky-500/10 border border-sky-500/30 rounded-xl p-5 my-5">
+                        <p className="font-semibold text-sky-300 text-sm mb-3">{section.callout.heading}</p>
+                        <ul className="space-y-2">
+                          {section.callout.items.map((item, ci) => (
+                            <li key={ci} className="flex items-start gap-2 text-sm text-gray-300">
+                              <span className="text-sky-400 mt-0.5 flex-shrink-0">→</span>
+                              {item}
+                            </li>
+                          ))}
+                        </ul>
+                      </div>
+                    )}
+                    {section.tip && (
+                      <div className="bg-amber-500/10 border border-amber-500/30 rounded-xl p-4 my-4">
+                        <p className="text-sm text-amber-200"><span className="font-semibold text-amber-400">Tip: </span>{section.tip}</p>
+                      </div>
+                    )}
+                    {section.table && (
+                      <div className="overflow-x-auto my-5">
+                        {section.table.caption && <p className="text-sm font-semibold text-white mb-2">{section.table.caption}</p>}
+                        <table className="w-full text-sm bg-slate-800 rounded-xl overflow-hidden border border-slate-700">
+                          <thead className="bg-slate-700/60">
+                            <tr>
+                              {section.table.headers.map((h, hi) => (
+                                <th key={hi} className="text-left p-3 text-gray-300 font-medium">{h}</th>
+                              ))}
+                            </tr>
+                          </thead>
+                          <tbody>
+                            {section.table.rows.map((row, ri) => (
+                              <tr key={ri} className={ri % 2 === 0 ? '' : 'bg-slate-700/30'}>
+                                {row.map((cell, ci) => (
+                                  <td key={ci} className="p-3 text-gray-400">{cell}</td>
+                                ))}
+                              </tr>
+                            ))}
+                          </tbody>
+                        </table>
+                      </div>
+                    )}
+                  </div>
+                ))}
+
+                {/* Compare CTA inline */}
+                <div className="bg-sky-600/15 border border-sky-500/30 rounded-xl p-6 my-8 text-center">
+                  <p className="text-white font-semibold mb-2">Ready to compare cruise insurance for your voyage?</p>
+                  <p className="text-gray-400 text-sm mb-4">Get quotes from all 6 leading NZ providers side by side.</p>
+                  <Link href="/compare/" className="inline-block bg-sky-500 hover:bg-sky-400 text-white font-bold px-6 py-3 rounded-xl transition-colors">
+                    Compare Providers →
+                  </Link>
+                </div>
+
               </div>
-
-              <p className="leading-relaxed">
-                To get personalised cruise insurance quotes from NZ&apos;s leading providers, use our free comparison service.
-                Our specialist advisers will compare options for your specific cruise, destination, and requirements — and
-                get back to you within 24 hours.
-              </p>
-            </div>
+            ) : (
+              /* Fallback placeholder for posts without structured content */
+              <div className="prose-dark space-y-4 text-gray-400">
+                <p className="leading-relaxed">
+                  Cruise insurance is an essential protection for any New Zealand traveller embarking on a cruise holiday.
+                  Whether you&apos;re sailing domestically around New Zealand, exploring the South Pacific islands, or venturing
+                  further afield to Asia, Europe, or beyond, the right cruise insurance policy protects your investment and
+                  your health.
+                </p>
+                <p className="leading-relaxed">
+                  Standard travel insurance policies are designed for land-based holidays. They often exclude or inadequately
+                  cover the unique risks associated with cruising — including onboard medical expenses, cabin confinement,
+                  missed port departures, and the high cost of maritime medical evacuations.
+                </p>
+                <p className="leading-relaxed">
+                  Our specialist cruise insurance advisers compare policies from New Zealand&apos;s leading providers to find
+                  the best cover for your specific cruise, destination, and traveller profile.
+                </p>
+                <div className="bg-slate-800 rounded-xl p-6 border border-slate-700 my-6">
+                  <h3 className="text-lg font-semibold text-white mb-3">Key Takeaways</h3>
+                  <ul className="space-y-2">
+                    {['Cruise insurance covers risks that standard travel insurance doesn\'t',
+                      'Unlimited medical cover is essential for maritime travel',
+                      'Pre-existing conditions can be covered with full disclosure',
+                      'Buy insurance as soon as you make your first trip payment',
+                    ].map((item, i) => (
+                      <li key={i} className="flex items-start gap-2 text-sm">
+                        <span className="text-sky-400 mt-0.5">✓</span> {item}
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              </div>
+            )}
 
             {/* Author bio */}
             {author && (
               <div className="mt-10 bg-slate-800 rounded-xl p-5 border border-slate-700 flex items-start gap-4">
+                {/* eslint-disable-next-line @next/next/no-img-element */}
                 <img src={author.avatar} alt={author.name} className="w-14 h-14 rounded-full object-cover flex-shrink-0" />
                 <div>
                   <p className="font-semibold text-white">{author.name}</p>
@@ -160,8 +233,8 @@ export default async function BlogPost({ params }: { params: Promise<{ slug: str
 
             {/* Sources */}
             <div className="mt-8 text-xs text-gray-600 border-t border-slate-800 pt-6">
-              <p className="font-semibold text-gray-500 mb-2">Sources & References</p>
-              <p>Information based on publicly available data from NZ cruise insurance providers and industry sources. This article is for general information only and does not constitute financial advice. Please read policy wording carefully before purchasing.</p>
+              <p className="font-semibold text-gray-500 mb-2">Sources &amp; References</p>
+              <p>Information based on publicly available data from the Cruise Lines International Association (CLIA), cruise industry market reports, NZ insurance provider documentation, and publicly available travel advisories. This article is for general information only and does not constitute financial or insurance advice. Always read policy wording carefully before purchasing and consider your specific circumstances.</p>
             </div>
           </article>
 
@@ -173,7 +246,8 @@ export default async function BlogPost({ params }: { params: Promise<{ slug: str
               <h3 className="font-semibold text-white mb-4">Related Articles</h3>
               <div className="space-y-4">
                 {relatedPosts.map(p => (
-                  <Link key={p.slug} href={`/blog/${p.slug}`} className="flex gap-3 group">
+                  <Link key={p.slug} href={`/blog/${p.slug}/`} className="flex gap-3 group">
+                    {/* eslint-disable-next-line @next/next/no-img-element */}
                     <img src={p.image} alt={p.title} className="w-16 h-12 object-cover rounded flex-shrink-0" />
                     <div>
                       <p className="text-sm text-gray-300 group-hover:text-sky-400 transition-colors line-clamp-2 font-medium">{p.title}</p>
@@ -188,10 +262,12 @@ export default async function BlogPost({ params }: { params: Promise<{ slug: str
               <h3 className="font-semibold text-white mb-3">Quick Links</h3>
               <ul className="space-y-2 text-sm">
                 {[
-                  { href: '/cruise-insurance-guide', label: 'Cruise Insurance Guide' },
-                  { href: '/making-a-claim', label: 'Making a Claim' },
-                  { href: '/faqs', label: 'FAQs' },
-                  { href: '/compare', label: 'Compare Providers' },
+                  { href: '/cruise-insurance-guide/', label: 'Cruise Insurance Guide' },
+                  { href: '/making-a-claim/', label: 'Making a Claim' },
+                  { href: '/faqs/', label: 'FAQs' },
+                  { href: '/compare/', label: 'Compare Providers' },
+                  { href: '/nz-cruise-insurance/best-cruise-insurance-nz/', label: 'Best Cruise Insurance' },
+                  { href: '/nz-cruise-insurance/senior-cruise-insurance/', label: 'Senior Cruise Insurance' },
                 ].map(l => (
                   <li key={l.href}>
                     <Link href={l.href} className="text-gray-400 hover:text-sky-400 transition-colors">{l.label}</Link>
