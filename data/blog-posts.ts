@@ -39,7 +39,7 @@ export const blogPosts: BlogPost[] = [
     excerpt: 'Expert tips on choosing the right cruise insurance policy — what to look for, what to avoid, and how to make sure you\'re fully protected on your next voyage.',
     category: 'Tips & Advice',
     readTime: '8 min',
-    image: 'https://images.unsplash.com/photo-1544551763-46a013bb70d5?w=1200&q=80',
+    image: 'https://images.unsplash.com/photo-1571003123894-1f0594d2b5d9?w=1200&q=80',
   },
   {
     slug: 'cruise-insurance-options',
