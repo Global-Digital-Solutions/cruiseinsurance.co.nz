@@ -161,7 +161,7 @@ export default function HomePage() {
       {/* ── COVERAGE GRID ── */}
       <section className="relative py-16 overflow-hidden">
         <div className="absolute inset-0">
-          <img src="url(https://images.unsplash.com/photo-1580371568735-6c1dc39a009d?w=1600&q=80)" alt="" className="w-full h-full object-cover" style={{ opacity: 0.80 }} />
+          <img src="https://images.unsplash.com/photo-1580371568735-6c1dc39a009d?w=1600&q=80" alt="" className="w-full h-full object-cover" style={{ opacity: 0.80 }} />
           <div className="absolute inset-0" style={{ background: "linear-gradient(to top, rgba(15,23,42,0.85) 0%, rgba(15,23,42,0.20) 50%, transparent 100%)" }} />
         </div>
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -187,7 +187,7 @@ export default function HomePage() {
       {/* ── DESTINATIONS GRID ── */}
       <section className="relative py-16 overflow-hidden">
         <div className="absolute inset-0">
-          <img src="url(https://images.unsplash.com/photo-1505118380757-91f5f5632de0?w=1600&q=80)" alt="" className="w-full h-full object-cover" style={{ opacity: 0.80 }} />
+          <img src="https://images.unsplash.com/photo-1505118380757-91f5f5632de0?w=1600&q=80" alt="" className="w-full h-full object-cover" style={{ opacity: 0.80 }} />
           <div className="absolute inset-0" style={{ background: "linear-gradient(to top, rgba(15,23,42,0.85) 0%, rgba(15,23,42,0.20) 50%, transparent 100%)" }} />
         </div>
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -212,7 +212,7 @@ export default function HomePage() {
       {/* ── PASSENGERS GRID ── */}
       <section className="relative py-16 overflow-hidden">
         <div className="absolute inset-0">
-          <img src="url(https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=1600&q=80)" alt="" className="w-full h-full object-cover" style={{ opacity: 0.80 }} />
+          <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=1600&q=80" alt="" className="w-full h-full object-cover" style={{ opacity: 0.80 }} />
           <div className="absolute inset-0" style={{ background: "linear-gradient(to top, rgba(15,23,42,0.85) 0%, rgba(15,23,42,0.20) 50%, transparent 100%)" }} />
         </div>
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">

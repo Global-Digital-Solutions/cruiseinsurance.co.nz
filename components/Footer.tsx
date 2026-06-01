@@ -96,14 +96,16 @@ export default function Footer() {
 
         {/* How This Site Works disclaimer */}
         <div className="mt-10 pt-8 border-t border-slate-800">
-          <div className="bg-slate-900 rounded-xl p-4 mb-6 text-xs text-gray-500">
-            <p className="font-semibold text-gray-400 mb-1">How This Site Works</p>
+          <div className="bg-slate-900 rounded-xl p-5 mb-6 text-xs text-gray-500 leading-relaxed">
+            <p className="font-semibold text-gray-300 mb-2">Important Information</p>
+            <p className="mb-2">
+              CruiseInsurance.co.nz is a comparison and referral service operated by Cover4You. We are not an insurance underwriter, broker, or licensed financial adviser under the Financial Markets Conduct Act 2013. We do not sell insurance directly.
+            </p>
+            <p className="mb-2">
+              When you click a &quot;Get Quote&quot; link, you are directed to a third-party insurer&apos;s website where you deal with them directly. CruiseInsurance.co.nz may receive a referral fee from insurers if you purchase a policy — <strong className="text-gray-400">this does not affect the price you pay</strong>. You pay exactly the same price as going direct.
+            </p>
             <p>
-              CruiseInsurance.co.nz is a comparison and referral service, not an insurance underwriter or licensed insurer.
-              We compare policies from multiple NZ-approved cruise insurance providers and refer qualified enquiries to licensed
-              insurance advisers and brokers. Our service is free to use — we may receive a referral fee from insurers.
-              All information is general in nature and does not constitute financial advice. Please read the policy wording
-              carefully before purchasing. Financial advice is provided by Cover4You, a registered financial advice provider.
+              All information on this site is general in nature and does not constitute personalised financial or insurance advice. Always read the Product Disclosure Statement (PDS) before purchasing and consider seeking independent financial advice if unsure.
             </p>
           </div>
 
@@ -113,10 +115,10 @@ export default function Footer() {
             </p>
             <div className="flex flex-wrap gap-4 text-xs">
               {[
-                { href: '/privacy', label: 'Privacy Policy' },
-                { href: '/terms', label: 'Terms of Use' },
-                { href: '/disclaimer', label: 'Disclaimer' },
-                { href: '/about', label: 'About' },
+                { href: '/privacy/', label: 'Privacy Policy' },
+                { href: '/terms/', label: 'Terms of Use' },
+                { href: '/disclaimer/', label: 'Disclaimer' },
+                { href: '/about/', label: 'About' },
               ].map(l => (
                 <Link key={l.href} href={l.href} className="text-gray-500 hover:text-sky-400 transition-colors">
                   {l.label}
