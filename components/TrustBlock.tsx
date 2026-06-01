@@ -4,7 +4,7 @@ export default function TrustBlock() {
   const stats = [
     { icon: Shield, value: '6+', label: 'Insurance Providers Compared' },
     { icon: Star, value: '4.7/5', label: 'Average Customer Rating' },
-    { icon: Users, value: '15,000+', label: 'Kiwi Cruisers Helped' },
+    { icon: Users, value: '32,000+', label: 'Cruise Sailings Worldwide' },
     { icon: Clock, value: '24hr', label: 'Quote Response Time' },
   ];
 

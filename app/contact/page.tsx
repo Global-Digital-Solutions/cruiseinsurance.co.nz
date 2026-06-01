@@ -32,7 +32,7 @@ export default function ContactPage() {
 
       {/* Hero */}
       <section className="relative bg-slate-900 overflow-hidden">
-        <div style={{ position: "absolute", inset: 0, backgroundImage: 'url(https://images.unsplash.com/photo-1548574505-5e239809ee19?w=1920&q=80)', backgroundSize: "cover", backgroundPosition: "center", opacity: 0.15 }} />
+        <div style={{ position: "absolute", inset: 0, backgroundImage: 'url(https://images.unsplash.com/photo-1548574505-5e239809ee19?w=1920&q=80)', backgroundSize: "cover", backgroundPosition: "center", opacity: 0.55 }} />
         <div className="absolute inset-0 bg-gradient-to-r from-slate-900 via-slate-900/95 to-slate-900/80" />
         <div className="absolute bottom-0 left-0 right-0 h-1 bg-sky-500" />
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">

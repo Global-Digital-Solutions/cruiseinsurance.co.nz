@@ -10,7 +10,7 @@ interface Stat {
 }
 
 const stats: Stat[] = [
-  { value: 15000, suffix: '+', label: 'Kiwis Insured', prefix: '' },
+  { value: 32000, suffix: '+', label: 'Cruise Sailings Globally Per Year', prefix: '' },
   { value: 6, suffix: '', label: 'Providers Compared', prefix: '' },
   { value: 180, suffix: '', label: 'From NZ$', prefix: 'NZ$' },
   { value: 24, suffix: 'hr', label: 'Quote Response', prefix: '' },

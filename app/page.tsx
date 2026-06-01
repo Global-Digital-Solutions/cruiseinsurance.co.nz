@@ -108,7 +108,7 @@ export default function HomePage() {
       {/* ── HERO ── */}
       <section className="relative bg-slate-900 overflow-hidden">
         <div
-          style={{ position: "absolute", inset: 0, backgroundImage: 'url(https://images.unsplash.com/photo-1548574505-5e239809ee19?w=1920&q=80)', backgroundSize: "cover", backgroundPosition: "center", opacity: 0.20 }}
+          style={{ position: "absolute", inset: 0, backgroundImage: 'url(https://images.unsplash.com/photo-1548574505-5e239809ee19?w=1920&q=80)', backgroundSize: "cover", backgroundPosition: "center", opacity: 0.60 }}
         />
         <div className="absolute inset-0 bg-gradient-to-br from-slate-900 via-slate-900/90 to-sky-900/40" />
 
@@ -160,8 +160,8 @@ export default function HomePage() {
 
       {/* ── COVERAGE GRID ── */}
       <section className="relative py-16 overflow-hidden">
-        <div style={{ position: "absolute", inset: 0, backgroundImage: "url(https://images.unsplash.com/photo-1580371568735-6c1dc39a009d?w=1600&q=80)", backgroundSize: "cover", backgroundPosition: "center", opacity: 0.25 }} />
-        <div className="absolute inset-0 bg-slate-900/82" />
+        <div style={{ position: "absolute", inset: 0, backgroundImage: "url(https://images.unsplash.com/photo-1580371568735-6c1dc39a009d?w=1600&q=80)", backgroundSize: "cover", backgroundPosition: "center", opacity: 0.55 }} />
+        <div className="absolute inset-0 bg-slate-900/65" />
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
             <h2 className="text-3xl font-bold text-white mb-4">What Cruise Insurance Covers</h2>
@@ -184,8 +184,8 @@ export default function HomePage() {
 
       {/* ── DESTINATIONS GRID ── */}
       <section className="relative py-16 overflow-hidden">
-        <div style={{ position: "absolute", inset: 0, backgroundImage: "url(https://images.unsplash.com/photo-1505118380757-91f5f5632de0?w=1600&q=80)", backgroundSize: "cover", backgroundPosition: "center", opacity: 0.35 }} />
-        <div className="absolute inset-0 bg-slate-800/78" />
+        <div style={{ position: "absolute", inset: 0, backgroundImage: "url(https://images.unsplash.com/photo-1505118380757-91f5f5632de0?w=1600&q=80)", backgroundSize: "cover", backgroundPosition: "center", opacity: 0.60 }} />
+        <div className="absolute inset-0 bg-slate-800/62" />
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-10">
             <h2 className="text-3xl font-bold text-white mb-4">Insurance by Destination</h2>
@@ -207,8 +207,8 @@ export default function HomePage() {
 
       {/* ── PASSENGERS GRID ── */}
       <section className="relative py-16 overflow-hidden">
-        <div style={{ position: "absolute", inset: 0, backgroundImage: "url(https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=1600&q=80)", backgroundSize: "cover", backgroundPosition: "center", opacity: 0.30 }} />
-        <div className="absolute inset-0 bg-slate-900/80" />
+        <div style={{ position: "absolute", inset: 0, backgroundImage: "url(https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=1600&q=80)", backgroundSize: "cover", backgroundPosition: "center", opacity: 0.55 }} />
+        <div className="absolute inset-0 bg-slate-900/62" />
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-10">
             <h2 className="text-3xl font-bold text-white mb-4">Cover for Every Traveller</h2>

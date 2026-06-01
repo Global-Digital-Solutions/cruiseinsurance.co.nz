@@ -115,8 +115,8 @@ Waiting until the last minute may mean events that occur after booking but befor
 
       {/* Hero */}
       <section className="relative bg-slate-900 overflow-hidden">
-        <div style={{ position: "absolute", inset: 0, backgroundImage: 'url(https://images.unsplash.com/photo-1548574505-5e239809ee19?w=1920&q=80)', backgroundSize: "cover", backgroundPosition: "center", opacity: 0.15 }} />
-        <div className="absolute inset-0 bg-gradient-to-br from-slate-900 via-slate-900/95 to-sky-900/20" />
+        <div style={{ position: "absolute", inset: 0, backgroundImage: 'url(https://images.unsplash.com/photo-1548574505-5e239809ee19?w=1920&q=80)', backgroundSize: "cover", backgroundPosition: "center", opacity: 0.55 }} />
+        <div className="absolute inset-0 bg-gradient-to-t from-slate-900/85 via-slate-900/30 to-transparent" />
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
           <nav className="flex items-center gap-2 text-sm text-gray-500 mb-6">
             <Link href="/" className="hover:text-sky-400">Home</Link>
