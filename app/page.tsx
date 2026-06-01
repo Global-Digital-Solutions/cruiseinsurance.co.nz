@@ -239,13 +239,21 @@ export default function HomePage() {
       {/* ── HOW IT WORKS ── */}
       <HowItWorks />
 
-      {/* ── PROVIDER LOGOS ── */}
-      <section className="py-12 bg-slate-800 border-y border-slate-700">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <p className="text-center text-gray-500 text-sm mb-8">We compare cruise insurance from NZ&apos;s leading providers</p>
-          <div className="flex flex-wrap items-center justify-center gap-8 md:gap-12">
-            {providers.map(p => (
-              <ProviderLogo key={p.slug} name={p.name} domain={p.logo} size="md" />
+      {/* ── PROVIDER LOGOS — scrolling marquee ── */}
+      <section className="py-10 bg-slate-800 border-y border-slate-700 overflow-hidden">
+        <p className="text-center text-gray-500 text-sm mb-6">We compare cruise insurance from NZ&apos;s leading providers</p>
+        <style>{`
+          @keyframes marquee-left {
+            0%   { transform: translateX(0); }
+            100% { transform: translateX(-50%); }
+          }
+          .marquee-track { animation: marquee-left 22s linear infinite; }
+          .marquee-track:hover { animation-play-state: paused; }
+        `}</style>
+        <div className="relative flex">
+          <div className="marquee-track flex items-center gap-16 whitespace-nowrap">
+            {[...providers, ...providers].map((p, i) => (
+              <ProviderLogo key={`${p.slug}-${i}`} name={p.name} domain={p.logo} size="md" />
             ))}
           </div>
         </div>
