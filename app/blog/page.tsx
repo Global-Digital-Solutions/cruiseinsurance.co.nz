@@ -6,7 +6,7 @@ import { Calendar, Clock } from 'lucide-react';
 const SITE_URL = 'https://www.cruiseinsurance.co.nz';
 
 export const metadata: Metadata = {
-  title: 'Cruise Insurance Blog | NZ Cruise Insurance Articles & Guides',
+  title: 'Cruise Insurance Guides & News',
   description: 'Expert cruise insurance articles, guides, and tips for New Zealand travellers. Everything you need to know about protecting your cruise holiday.',
   alternates: { canonical: `${SITE_URL}/blog` },
 };
@@ -23,9 +23,9 @@ export default function BlogIndex() {
           <nav className="flex items-center gap-2 text-sm text-gray-500 mb-4">
             <Link href="/" className="hover:text-sky-400">Home</Link>
             <span>/</span>
-            <span className="text-gray-300">Blog</span>
+            <span className="text-gray-300">Guides &amp; News</span>
           </nav>
-          <h1 className="text-4xl font-bold text-white mb-3">Cruise Insurance Blog</h1>
+          <h1 className="text-4xl font-bold text-white mb-3">Guides &amp; News</h1>
           <p className="text-gray-400 text-lg max-w-2xl">
             Expert articles, guides, and tips on cruise insurance for New Zealand travellers.
           </p>

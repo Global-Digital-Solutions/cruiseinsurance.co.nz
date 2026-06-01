@@ -94,7 +94,7 @@ export default function NavBar() {
             <Link href="/compare" className="px-3 py-2 text-sm text-gray-300 hover:text-white rounded-lg hover:bg-slate-800 transition-colors">Compare</Link>
             <Link href="/cruise-insurance-guide" className="px-3 py-2 text-sm text-gray-300 hover:text-white rounded-lg hover:bg-slate-800 transition-colors">Guide</Link>
             <Link href="/faqs" className="px-3 py-2 text-sm text-gray-300 hover:text-white rounded-lg hover:bg-slate-800 transition-colors">FAQs</Link>
-            <Link href="/blog" className="px-3 py-2 text-sm text-gray-300 hover:text-white rounded-lg hover:bg-slate-800 transition-colors">Blog</Link>
+            <Link href="/blog" className="px-3 py-2 text-sm text-gray-300 hover:text-white rounded-lg hover:bg-slate-800 transition-colors">Resources</Link>
           </div>
 
           <div className="hidden lg:flex items-center gap-3">
@@ -136,7 +136,7 @@ export default function NavBar() {
               { href: '/cruise-insurance-guide', label: 'Cruise Insurance Guide' },
               { href: '/making-a-claim', label: 'Making a Claim' },
               { href: '/faqs', label: 'FAQs' },
-              { href: '/blog', label: 'Blog' },
+              { href: '/blog', label: 'Resources' },
               { href: '/contact', label: 'Contact Us' },
             ].map(l => (
               <Link key={l.href} href={l.href} onClick={() => setOpen(false)}
