@@ -5,7 +5,7 @@ export default function TrustBlock() {
     { icon: Shield, value: '6+', label: 'Insurance Providers Compared' },
     { icon: Star, value: '4.7/5', label: 'Average Customer Rating' },
     { icon: Users, value: '32,000+', label: 'Cruise Sailings Worldwide' },
-    { icon: Clock, value: '24hr', label: 'Quote Response Time' },
+    { icon: Clock, value: 'Instant', label: 'Cover Available Online' },
   ];
 
   return (
