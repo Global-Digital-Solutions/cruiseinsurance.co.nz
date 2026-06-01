@@ -4,7 +4,7 @@ import { Shield, Users, CheckCircle, Award, Anchor } from 'lucide-react';
 import { destinationTypes } from '@/data/destination-types';
 import { passengerTypes } from '@/data/passenger-types';
 
-const SITE_URL = 'https://cruiseinsurance.co.nz';
+const SITE_URL = 'https://www.cruiseinsurance.co.nz';
 
 export const metadata: Metadata = {
   title: 'About CruiseInsurance.co.nz | NZ Cruise Insurance Specialists',

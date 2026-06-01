@@ -7,7 +7,7 @@ import { destinationTypes } from '@/data/destination-types';
 import { faqs } from '@/data/faqs';
 import { CheckCircle, ChevronDown, Users } from 'lucide-react';
 
-const SITE_URL = 'https://cruiseinsurance.co.nz';
+const SITE_URL = 'https://www.cruiseinsurance.co.nz';
 
 const heroImages: Record<string, string> = {
   'singles-cruise-insurance': 'https://images.unsplash.com/photo-1544551763-46a013bb70d5?w=1920&q=80',

@@ -3,7 +3,7 @@ import Link from 'next/link';
 import QuoteForm from '@/components/QuoteForm';
 import { Phone, Mail, MapPin, Clock, Shield, CheckCircle, Users } from 'lucide-react';
 
-const SITE_URL = 'https://cruiseinsurance.co.nz';
+const SITE_URL = 'https://www.cruiseinsurance.co.nz';
 
 export const metadata: Metadata = {
   title: 'Contact Us | Get Your Free Cruise Insurance Quote',

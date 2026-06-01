@@ -3,7 +3,7 @@ import Link from 'next/link';
 import { blogPosts, blogCategories } from '@/data/blog-posts';
 import { Calendar, Clock } from 'lucide-react';
 
-const SITE_URL = 'https://cruiseinsurance.co.nz';
+const SITE_URL = 'https://www.cruiseinsurance.co.nz';
 
 export const metadata: Metadata = {
   title: 'Cruise Insurance Blog | NZ Cruise Insurance Articles & Guides',

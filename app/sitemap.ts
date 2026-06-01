@@ -5,7 +5,7 @@ import { destinationTypes } from '@/data/destination-types';
 import { passengerTypes } from '@/data/passenger-types';
 import { blogPosts } from '@/data/blog-posts';
 
-const SITE_URL = 'https://cruiseinsurance.co.nz';
+const SITE_URL = 'https://www.cruiseinsurance.co.nz';
 const NOW = new Date('2026-04-14');
 
 export default function sitemap(): MetadataRoute.Sitemap {

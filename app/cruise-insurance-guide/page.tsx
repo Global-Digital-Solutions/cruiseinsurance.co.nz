@@ -5,7 +5,7 @@ import { destinationTypes } from '@/data/destination-types';
 import { passengerTypes } from '@/data/passenger-types';
 import { CheckCircle, BookOpen } from 'lucide-react';
 
-const SITE_URL = 'https://cruiseinsurance.co.nz';
+const SITE_URL = 'https://www.cruiseinsurance.co.nz';
 
 export const metadata: Metadata = {
   title: 'Cruise Insurance Guide | Complete NZ Cruise Insurance Guide',

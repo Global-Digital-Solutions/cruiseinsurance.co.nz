@@ -4,7 +4,7 @@ import QuoteForm from '@/components/QuoteForm';
 import { faqs, faqCategories } from '@/data/faqs';
 import { ChevronDown, HelpCircle } from 'lucide-react';
 
-const SITE_URL = 'https://cruiseinsurance.co.nz';
+const SITE_URL = 'https://www.cruiseinsurance.co.nz';
 
 export const metadata: Metadata = {
   title: 'Cruise Insurance FAQs | Common Questions Answered',

@@ -6,7 +6,7 @@ import { blogPosts, getBlogPostBySlug } from '@/data/blog-posts';
 import { getAuthorByName } from '@/data/authors';
 import { Calendar, Clock, ArrowLeft } from 'lucide-react';
 
-const SITE_URL = 'https://cruiseinsurance.co.nz';
+const SITE_URL = 'https://www.cruiseinsurance.co.nz';
 
 export async function generateStaticParams() {
   return blogPosts.map(p => ({ slug: p.slug }));

@@ -4,7 +4,7 @@ import QuoteForm from '@/components/QuoteForm';
 import { providers } from '@/data/providers';
 import { Star, CheckCircle, X } from 'lucide-react';
 
-const SITE_URL = 'https://cruiseinsurance.co.nz';
+const SITE_URL = 'https://www.cruiseinsurance.co.nz';
 
 export const metadata: Metadata = {
   title: 'Compare NZ Cruise Insurance Providers | Side-by-Side Comparison',

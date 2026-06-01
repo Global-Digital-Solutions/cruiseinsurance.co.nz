@@ -3,7 +3,7 @@ import Link from 'next/link';
 import QuoteForm from '@/components/QuoteForm';
 import { Phone, Mail, FileText, CheckCircle, AlertTriangle, Clock } from 'lucide-react';
 
-const SITE_URL = 'https://cruiseinsurance.co.nz';
+const SITE_URL = 'https://www.cruiseinsurance.co.nz';
 
 export const metadata: Metadata = {
   title: 'Making a Cruise Insurance Claim | How to Claim Guide',

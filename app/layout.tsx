@@ -3,7 +3,7 @@ import NavBar from '@/components/NavBar';
 import Footer from '@/components/Footer';
 import '@/app/globals.css';
 
-const SITE_URL = 'https://cruiseinsurance.co.nz';
+const SITE_URL = 'https://www.cruiseinsurance.co.nz';
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),

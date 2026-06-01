@@ -7,7 +7,7 @@ import { passengerTypes } from '@/data/passenger-types';
 import { faqs } from '@/data/faqs';
 import { CheckCircle, ChevronDown, MapPin } from 'lucide-react';
 
-const SITE_URL = 'https://cruiseinsurance.co.nz';
+const SITE_URL = 'https://www.cruiseinsurance.co.nz';
 
 const heroImages: Record<string, string> = {
   'domestic-cruise-insurance': 'https://images.unsplash.com/photo-1565087572596-4c843abdb99d?w=1920&q=80',

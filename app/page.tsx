@@ -12,7 +12,7 @@ import { providers } from '@/data/providers';
 import { faqs } from '@/data/faqs';
 import { ChevronDown, Anchor, Shield, AlertTriangle, CheckCircle } from 'lucide-react';
 
-const SITE_URL = 'https://cruiseinsurance.co.nz';
+const SITE_URL = 'https://www.cruiseinsurance.co.nz';
 
 export const metadata: Metadata = {
   title: 'CruiseInsurance.co.nz | NZ Cruise Insurance Specialists',
