@@ -159,8 +159,10 @@ export default function HomePage() {
       <TrustBlock />
 
       {/* ── COVERAGE GRID ── */}
-      <section className="py-16 bg-slate-900">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <section className="relative py-16 overflow-hidden">
+        <div style={{ position: "absolute", inset: 0, backgroundImage: "url(https://images.unsplash.com/photo-1580371568735-6c1dc39a009d?w=1600&q=80)", backgroundSize: "cover", backgroundPosition: "center", opacity: 0.25 }} />
+        <div className="absolute inset-0 bg-slate-900/82" />
+        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
             <h2 className="text-3xl font-bold text-white mb-4">What Cruise Insurance Covers</h2>
             <p className="text-gray-400 max-w-2xl mx-auto">
@@ -181,8 +183,10 @@ export default function HomePage() {
       </section>
 
       {/* ── DESTINATIONS GRID ── */}
-      <section className="py-16 bg-slate-800">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <section className="relative py-16 overflow-hidden">
+        <div style={{ position: "absolute", inset: 0, backgroundImage: "url(https://images.unsplash.com/photo-1505118380757-91f5f5632de0?w=1600&q=80)", backgroundSize: "cover", backgroundPosition: "center", opacity: 0.35 }} />
+        <div className="absolute inset-0 bg-slate-800/78" />
+        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-10">
             <h2 className="text-3xl font-bold text-white mb-4">Insurance by Destination</h2>
             <p className="text-gray-400">Every cruise destination has unique risks — get cover tailored to where you&apos;re sailing.</p>
@@ -202,8 +206,10 @@ export default function HomePage() {
       </section>
 
       {/* ── PASSENGERS GRID ── */}
-      <section className="py-16 bg-slate-900">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <section className="relative py-16 overflow-hidden">
+        <div style={{ position: "absolute", inset: 0, backgroundImage: "url(https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=1600&q=80)", backgroundSize: "cover", backgroundPosition: "center", opacity: 0.30 }} />
+        <div className="absolute inset-0 bg-slate-900/80" />
+        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-10">
             <h2 className="text-3xl font-bold text-white mb-4">Cover for Every Traveller</h2>
             <p className="text-gray-400">Specialist cruise insurance tailored to who you are and how you travel.</p>
