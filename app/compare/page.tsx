@@ -103,12 +103,15 @@ export default function ComparePage() {
                 </div>
               )}
 
-              <div className="flex items-center justify-between">
-                <span className="text-sky-400 font-semibold text-sm">{p.avgPremium}</span>
-                <Link href="/compare/"
-                  className="bg-sky-500 hover:bg-sky-600 text-white text-xs font-semibold px-3 py-1.5 rounded-lg transition-colors">
-                  Get a Quote
-                </Link>
+              <div className="mt-4 pt-4 border-t border-slate-700">
+                <div className="flex items-center justify-between mb-3">
+                  <span className="text-sky-400 font-bold text-sm">{p.avgPremium}</span>
+                  <span className="text-gray-500 text-xs">avg. premium</span>
+                </div>
+                <a href={p.quoteUrl} target="_blank" rel="noopener noreferrer nofollow"
+                  className="block w-full text-center bg-sky-500 hover:bg-sky-400 text-white font-bold py-3 px-4 rounded-xl transition-colors shadow-md shadow-sky-500/20 text-sm">
+                  Get Online Quote at {p.name} →
+                </a>
               </div>
             </div>
           ))}
