@@ -79,7 +79,7 @@ export const blogPosts: BlogPost[] = [
     excerpt: 'Navigating cruise insurance with pre-existing medical conditions doesn\'t have to be difficult. Here\'s everything you need to know about declaration, coverage, and finding the best policy.',
     category: 'Medical',
     readTime: '10 min',
-    image: 'https://images.unsplash.com/photo-1559757148-5c350d0d3c56?w=1200&q=80',
+    image: 'https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=1200&q=80',
   },
   {
     slug: 'cruise-insurance-vs-travel-insurance',
