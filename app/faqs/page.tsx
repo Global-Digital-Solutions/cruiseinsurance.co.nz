@@ -40,7 +40,7 @@ export default function FAQsPage() {
       {/* Dark header */}
       <section className="relative bg-slate-900 text-white py-20 overflow-hidden min-h-[280px] flex items-end">
         <div className="absolute inset-0">
-          <img src="https://images.unsplash.com/photo-1548574505-5e239809ee19?w=1600&q=80" alt="" className="w-full h-full object-cover" style={{ opacity: 0.75 }} />
+          <img src="https://images.unsplash.com/photo-1548574505-5e239809ee19?w=1600&q=80" alt="Cruise ship at sea — cruise insurance FAQs" className="w-full h-full object-cover" style={{ opacity: 0.75 }} />
           <div className="absolute inset-0" style={{ background: 'linear-gradient(to top, rgba(15,23,42,0.90) 0%, rgba(15,23,42,0.30) 60%, transparent 100%)' }} />
         </div>
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pb-2 w-full">

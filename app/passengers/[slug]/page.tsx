@@ -12,10 +12,10 @@ const SITE_URL = 'https://www.cruiseinsurance.co.nz';
 const heroImages: Record<string, string> = {
   'singles-cruise-insurance': 'https://images.unsplash.com/photo-1544551763-46a013bb70d5?w=1920&q=80',
   'couples-cruise-insurance': 'https://images.unsplash.com/photo-1548574505-5e239809ee19?w=1920&q=80',
-  'family-cruise-insurance': 'https://images.unsplash.com/photo-1580835239846-5bb9ce5f3b24?w=1920&q=80',
-  'seniors-cruise-insurance': 'https://images.unsplash.com/photo-1565087572596-4c843abdb99d?w=1920&q=80',
+  'family-cruise-insurance': 'https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?w=1920&q=80',
+  'seniors-cruise-insurance': 'https://images.unsplash.com/photo-1559827260-dc66d52bef19?w=1920&q=80',
   'pre-existing-medical-insurance': 'https://images.unsplash.com/photo-1559757148-5c350d0d3c56?w=1920&q=80',
-  'first-time-cruise-insurance': 'https://images.unsplash.com/photo-1505118380757-91f5f5632de0?w=1920&q=80',
+  'first-time-cruise-insurance': 'https://images.unsplash.com/photo-1505118380757-91f5f5632de0?w=1200&q=80',
   'multi-cruise-insurance': 'https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=1920&q=80',
   'annual-cruise-insurance': 'https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?w=1920&q=80',
 };
@@ -124,7 +124,7 @@ export default async function PassengerPage({ params }: { params: Promise<{ slug
       {/* Hero */}
       <section className="relative bg-slate-900 overflow-hidden">
         <div className="absolute inset-0">
-          <img src={heroImage} alt="" className="w-full h-full object-cover" style={{ opacity: 0.80 }} />
+          <img src={heroImage} alt={`${pass.title} — cruise insurance`} className="w-full h-full object-cover" style={{ opacity: 0.80 }} />
           <div className="absolute inset-0" style={{ background: "linear-gradient(to top, rgba(15,23,42,0.85) 0%, rgba(15,23,42,0.20) 50%, transparent 100%)" }} />
         </div>
         <div className="absolute inset-0 bg-gradient-to-t from-slate-900/85 via-slate-900/30 to-transparent" />

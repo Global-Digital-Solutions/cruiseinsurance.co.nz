@@ -109,7 +109,7 @@ export default function HomePage() {
       <section className="relative bg-slate-900 overflow-hidden">
         <div className="absolute inset-0">
           {/* eslint-disable-next-line @next/next/no-img-element */}
-          <img src="https://images.unsplash.com/photo-1548574505-5e239809ee19?w=1920&q=80" alt="" className="w-full h-full object-cover" style={{ opacity: 0.90 }} />
+          <img src="https://images.unsplash.com/photo-1548574505-5e239809ee19?w=1920&q=80" alt="Cruise ship at sea — cruise insurance" className="w-full h-full object-cover" style={{ opacity: 0.90 }} />
           <div className="absolute inset-0" style={{ background: 'linear-gradient(to right, rgba(15,23,42,0.82) 0%, rgba(15,23,42,0.45) 55%, rgba(15,23,42,0.15) 100%)' }} />
           <div className="absolute inset-0" style={{ background: 'linear-gradient(to top, rgba(15,23,42,0.70) 0%, transparent 40%)' }} />
         </div>
@@ -163,7 +163,7 @@ export default function HomePage() {
       {/* ── COVERAGE GRID ── */}
       <section className="relative py-16 overflow-hidden">
         <div className="absolute inset-0">
-          <img src="https://images.unsplash.com/photo-1580371568735-6c1dc39a009d?w=1600&q=80" alt="" className="w-full h-full object-cover" style={{ opacity: 0.80 }} />
+          <img src="https://images.unsplash.com/photo-1580371568735-6c1dc39a009d?w=1600&q=80" alt="Cruise ship on calm ocean waters" className="w-full h-full object-cover" style={{ opacity: 0.80 }} />
           <div className="absolute inset-0" style={{ background: "linear-gradient(to top, rgba(15,23,42,0.85) 0%, rgba(15,23,42,0.20) 50%, transparent 100%)" }} />
         </div>
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -189,7 +189,7 @@ export default function HomePage() {
       {/* ── DESTINATIONS GRID ── */}
       <section className="relative py-16 overflow-hidden">
         <div className="absolute inset-0">
-          <img src="https://images.unsplash.com/photo-1505118380757-91f5f5632de0?w=1600&q=80" alt="" className="w-full h-full object-cover" style={{ opacity: 0.80 }} />
+          <img src="https://images.unsplash.com/photo-1505118380757-91f5f5632de0?w=1600&q=80" alt="Cruise ship at sea" className="w-full h-full object-cover" style={{ opacity: 0.80 }} />
           <div className="absolute inset-0" style={{ background: "linear-gradient(to top, rgba(15,23,42,0.85) 0%, rgba(15,23,42,0.20) 50%, transparent 100%)" }} />
         </div>
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -214,7 +214,7 @@ export default function HomePage() {
       {/* ── PASSENGERS GRID ── */}
       <section className="relative py-16 overflow-hidden">
         <div className="absolute inset-0">
-          <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=1600&q=80" alt="" className="w-full h-full object-cover" style={{ opacity: 0.80 }} />
+          <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=1600&q=80" alt="Medical cover for cruise travellers" className="w-full h-full object-cover" style={{ opacity: 0.80 }} />
           <div className="absolute inset-0" style={{ background: "linear-gradient(to top, rgba(15,23,42,0.85) 0%, rgba(15,23,42,0.20) 50%, transparent 100%)" }} />
         </div>
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">

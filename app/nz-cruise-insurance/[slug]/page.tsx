@@ -75,7 +75,7 @@ export default async function LandingPage({ params }: { params: Promise<{ slug: 
       <section className="relative bg-slate-900 text-white py-20 overflow-hidden min-h-[300px] flex items-end">
         <div className="absolute inset-0">
           {/* eslint-disable-next-line @next/next/no-img-element */}
-          <img src={page.heroImage} alt="" className="w-full h-full object-cover" style={{ opacity: 0.75 }} />
+          <img src={page.heroImage} alt={`${page.title} — cruise insurance`} className="w-full h-full object-cover" style={{ opacity: 0.75 }} />
           <div className="absolute inset-0" style={{ background: 'linear-gradient(to right, rgba(15,23,42,0.88) 0%, rgba(15,23,42,0.55) 60%, rgba(15,23,42,0.20) 100%)' }} />
           <div className="absolute inset-0" style={{ background: 'linear-gradient(to top, rgba(15,23,42,0.85) 0%, transparent 50%)' }} />
         </div>

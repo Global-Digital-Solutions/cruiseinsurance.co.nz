@@ -127,7 +127,7 @@ export const landingPages: LandingPage[] = [
     heroHeading: 'The Best Cruise Insurance — Top-Rated Providers Compared',
     metaTitle: 'Best Cruise Insurance NZ 2026 — Top-Rated Providers Compared',
     metaDescription: 'Find the best cruise insurance for your voyage. Independent comparison of top NZ providers on medical cover, cabin confinement, missed port, emergency assistance and value.',
-    heroImage: 'https://images.unsplash.com/photo-1505118380757-91f5f5632de0?w=1920&q=80',
+    heroImage: 'https://images.unsplash.com/photo-1505118380757-91f5f5632de0?w=1200&q=80',
     intro: 'The best cruise insurance is not a single product — it depends on your age, destination, travel companions, and specific risk profile. Our independent comparison evaluates the top providers across every measure that matters so you can choose with confidence.',
     sections: [
       {

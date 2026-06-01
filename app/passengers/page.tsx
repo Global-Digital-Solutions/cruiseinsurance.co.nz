@@ -16,7 +16,7 @@ export default function PassengersPage() {
     <>
       <section className="relative bg-[#0c3b6e] text-white py-16 overflow-hidden">
         <div className="absolute inset-0">
-          <img src="https://images.unsplash.com/photo-1544551763-46a013bb70d5?w=1600&q=80" alt="" className="w-full h-full object-cover" style={{ opacity: 0.80 }} />
+          <img src="https://images.unsplash.com/photo-1544551763-46a013bb70d5?w=1600&q=80" alt="Cruise travellers — insurance by traveller type" className="w-full h-full object-cover" style={{ opacity: 0.80 }} />
           <div className="absolute inset-0" style={{ background: "linear-gradient(to top, rgba(15,23,42,0.85) 0%, rgba(15,23,42,0.20) 50%, transparent 100%)" }} />
         </div>
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">

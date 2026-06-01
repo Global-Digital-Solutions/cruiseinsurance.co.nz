@@ -72,7 +72,7 @@ export default function TermsPage() {
     <>
       <section className="relative bg-slate-900 text-white py-16 overflow-hidden">
         <div className="absolute inset-0">
-          <img src="https://images.unsplash.com/photo-1548574505-5e239809ee19?w=1600&q=80" alt="" className="w-full h-full object-cover" style={{ opacity: 0.45 }} />
+          <img src="https://images.unsplash.com/photo-1548574505-5e239809ee19?w=1600&q=80" alt="CruiseInsurance.co.nz — terms of use" className="w-full h-full object-cover" style={{ opacity: 0.45 }} />
           <div className="absolute inset-0" style={{ background: 'linear-gradient(to top, rgba(15,23,42,0.90) 0%, rgba(15,23,42,0.40) 60%, transparent 100%)' }} />
         </div>
         <div className="relative max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">

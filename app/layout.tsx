@@ -65,9 +65,9 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     url: SITE_URL,
     logo: {
       '@type': 'ImageObject',
-      url: `${SITE_URL}/logo.png`,
-      width: 200,
-      height: 60,
+      url: `${SITE_URL}/android-chrome-512x512.png`,
+      width: 512,
+      height: 512,
     },
     description: 'NZ specialist cruise insurance comparison and referral service. We connect New Zealand cruisers with licensed insurance brokers to find the best cruise cover for their voyage.',
     telephone: '+6498859549',

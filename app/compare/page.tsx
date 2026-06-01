@@ -44,7 +44,7 @@ export default function ComparePage() {
       {/* Hero */}
       <section className="relative bg-slate-900 text-white py-20 overflow-hidden min-h-[280px] flex items-end">
         <div className="absolute inset-0">
-          <img src="https://images.unsplash.com/photo-1548574505-5e239809ee19?w=1600&q=80" alt="" className="w-full h-full object-cover" style={{ opacity: 0.75 }} />
+          <img src="https://images.unsplash.com/photo-1548574505-5e239809ee19?w=1600&q=80" alt="Compare cruise insurance providers" className="w-full h-full object-cover" style={{ opacity: 0.75 }} />
           <div className="absolute inset-0" style={{ background: 'linear-gradient(to right, rgba(15,23,42,0.88) 0%, rgba(15,23,42,0.50) 60%, rgba(15,23,42,0.20) 100%)' }} />
           <div className="absolute inset-0" style={{ background: 'linear-gradient(to top, rgba(15,23,42,0.85) 0%, transparent 50%)' }} />
         </div>

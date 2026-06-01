@@ -16,7 +16,7 @@ const heroImages: Record<string, string> = {
   'asian-cruise-insurance': 'https://images.unsplash.com/photo-1540959733332-eab4deabeeaf?w=1920&q=80',
   'european-cruise-insurance': 'https://images.unsplash.com/photo-1527838832700-5059252407fa?w=1920&q=80',
   'international-cruise-insurance': 'https://images.unsplash.com/photo-1548574505-5e239809ee19?w=1920&q=80',
-  'worldwide-cruise-insurance': 'https://images.unsplash.com/photo-1505118380757-91f5f5632de0?w=1920&q=80',
+  'worldwide-cruise-insurance': 'https://images.unsplash.com/photo-1505118380757-91f5f5632de0?w=1200&q=80',
 };
 
 export async function generateStaticParams() {
@@ -109,7 +109,7 @@ export default async function DestinationPage({ params }: { params: Promise<{ sl
       {/* Hero */}
       <section className="relative bg-slate-900 overflow-hidden">
         <div className="absolute inset-0">
-          <img src={heroImage} alt="" className="w-full h-full object-cover" style={{ opacity: 0.80 }} />
+          <img src={heroImage} alt={`${dest.title} — cruise insurance`} className="w-full h-full object-cover" style={{ opacity: 0.80 }} />
           <div className="absolute inset-0" style={{ background: "linear-gradient(to top, rgba(15,23,42,0.85) 0%, rgba(15,23,42,0.20) 50%, transparent 100%)" }} />
         </div>
         <div className="absolute inset-0 bg-gradient-to-t from-slate-900/85 via-slate-900/30 to-transparent" />
