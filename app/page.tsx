@@ -220,7 +220,7 @@ export default function HomePage() {
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-10">
             <h2 className="text-3xl font-bold text-white mb-4">Cover for Every Traveller</h2>
-            <p className="text-gray-400">Specialist cruise insurance tailored to who you are and how you travel.</p>
+            <p className="text-white">Specialist cruise insurance tailored to who you are and how you travel.</p>
           </div>
           <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
             {passengerTypes.map(pass => (
