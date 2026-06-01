@@ -169,7 +169,7 @@ export default function HomePage() {
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
             <h2 className="text-3xl font-bold text-white mb-4">What Cruise Insurance Covers</h2>
-            <p className="text-gray-400 max-w-2xl mx-auto">
+            <p className="text-white max-w-2xl mx-auto">
               Cruise-specific cover for the risks that standard travel insurance doesn&apos;t adequately protect against.
             </p>
           </div>
@@ -195,7 +195,7 @@ export default function HomePage() {
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-10">
             <h2 className="text-3xl font-bold text-white mb-4">Insurance by Destination</h2>
-            <p className="text-gray-400">Every cruise destination has unique risks — get cover tailored to where you&apos;re sailing.</p>
+            <p className="text-white">Every cruise destination has unique risks — get cover tailored to where you&apos;re sailing.</p>
           </div>
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4">
             {destinationTypes.map(dest => (
@@ -243,7 +243,7 @@ export default function HomePage() {
           <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 mb-8">
             <div>
               <h2 className="text-2xl font-bold text-white">Cruise Insurance Guides</h2>
-              <p className="text-gray-400 mt-1 text-sm">Find the right cover for your situation</p>
+              <p className="text-white mt-1 text-sm">Find the right cover for your situation</p>
             </div>
           </div>
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-3">
