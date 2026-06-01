@@ -143,7 +143,7 @@ export default function HomePage() {
               <div className="flex flex-wrap gap-3">
                 <Link href="/compare/"
                   className="bg-sky-500 hover:bg-sky-600 text-white font-semibold px-6 py-3 rounded-xl transition-colors">
-                  Get Free Quotes →
+                  Get Covered Now →
                 </Link>
                 <Link href="/cruise-insurance-guide"
                   className="border border-slate-600 hover:border-sky-500 text-gray-300 hover:text-white font-medium px-6 py-3 rounded-xl transition-colors">
