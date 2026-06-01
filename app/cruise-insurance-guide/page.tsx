@@ -126,16 +126,15 @@ Waiting until the last minute may mean events that occur after booking but befor
             <span>/</span>
             <span className="text-gray-300">Cruise Insurance Guide</span>
           </nav>
-          <div className="grid lg:grid-cols-2 gap-12 items-start">
-            <div>
+          <div className="max-w-3xl">
               <div className="inline-flex items-center gap-2 bg-sky-500/10 border border-sky-500/20 text-sky-400 text-sm px-3 py-1.5 rounded-full mb-4">
                 <BookOpen size={13} /> Complete Guide
               </div>
               <h1 className="text-4xl md:text-5xl font-bold text-white mb-4">
-                The Complete Cruise Insurance Guide for NZ Travellers
+                The Complete Cruise Insurance Guide
               </h1>
               <p className="text-xl text-gray-300 mb-6">
-                Everything Kiwi cruisers need to know about protecting their holiday investment — from domestic NZ cruises to worldwide voyages.
+                Everything cruisers need to know about protecting their holiday investment — from domestic voyages to worldwide cruises.
               </p>
               <div className="grid grid-cols-2 gap-2">
                 {['What cruise insurance covers', 'How much it costs', 'Pre-existing conditions', 'When to buy', 'Single vs. annual cover', 'How to claim'].map(t => (
@@ -145,10 +144,6 @@ Waiting until the last minute may mean events that occur after booking but befor
                   </div>
                 ))}
               </div>
-            </div>
-            <div>
-              <CompareCTA variant="sidebar" />
-            </div>
           </div>
         </div>
       </section>
